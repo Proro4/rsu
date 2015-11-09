@@ -1,5 +1,6 @@
 @media screen and (max-width: 1366px){
 	  .slider .slider-container .item img { height: 900px; }
+	  .arrow-to-top{	right: 0 !important;	bottom: 0 !important;}
 
 }
 @media screen and (max-width: 1280px){

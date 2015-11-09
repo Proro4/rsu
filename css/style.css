@@ -76,7 +76,7 @@ blockquote, q {
 
 .logo {
 	float: left;
-	margin:6px 0 0 110px;
+	margin:6px 0 0 40px;
 	width:15%;
 }
 
@@ -168,8 +168,9 @@ h1 {
 .container {
 	width: 100%;
 	height: auto;
-	overflow: hidden;
+	
 	margin: 0 auto;
+	/*overflow: hidden;*/
 	position: absolute;
 	top: 0;
 	z-index: 1;
@@ -179,7 +180,7 @@ h1 {
 .wrapper {
 	width: 1000px;
 	height: auto;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	margin: 0 auto;
 }
 
@@ -188,7 +189,7 @@ h1 {
 .left-column {
 	width: 710px;
 	height: auto;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	float: left;
 	margin:0 0 20px 0px;
 	background: rgb(255,255,255);
@@ -494,7 +495,7 @@ transition:.3s all;
 .download-documents-box {
 	width: 270px;
 	height: auto;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 .download-button {
 	position: relative;
@@ -551,7 +552,7 @@ transition:.3s all;
 	margin: 0;
 	width: 100%;
 	height: auto;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	border-bottom: 1px solid rgb(234,234,234);
 
 }
@@ -784,7 +785,7 @@ transition:.3s all;
 	font-family: 'Open Sans', serif;
 	font-size: 13px;
 	color: rgb(198,198,198);
-	margin:120px 0 0 0;
+	margin:93px 0px 20px 0;
 
 }
 
@@ -794,7 +795,7 @@ transition:.3s all;
 	overflow: hidden;
 	float: left;
 	margin: 0 0px 0 19px;
-	background: url(../img/gerb-footer.png) no-repeat right 35px;
+	background: url(../img/gerb-footer.png) no-repeat right 21px;
 }
 
 .info-links {
@@ -1105,4 +1106,19 @@ display: none;
 	background: url(../img/stars.png)no-repeat;
 	height: 25px;
 	width: 85px;
+}
+.arrow-to-top{
+  /*display: none;*/
+  position: fixed;
+  right: 100px;
+  bottom: 50px;
+  height: 43px;
+  width: 43px;
+  background: url(../img/other/arrow-top.png)no-repeat;
+  cursor: pointer;
+  opacity: .9;
+  z-index: 5;
+}
+.arrow-to-top:hover{
+	opacity: 1;
 }
