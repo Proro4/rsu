@@ -130,21 +130,22 @@ h1 {
 }
 
 
-.nav-container ul {
+.nav-container>.menu {
 	margin: 0 auto;
 	text-align: center;
 	padding:0;
 
 }
 
-.nav-container ul li {
+.nav-container>.menu>li {
 	display: inline-block;
 	padding:10px 0 9px 0;
 	margin:0;
 	line-height: 22px;
+	position: relative;
 }
 
-.nav-container ul li a {
+.nav-container>.menu>li>a {
 	text-decoration: none;
 	color: rgb(255,255,255);
 	font-family: 'RobotoSlab-Regular', serif;
@@ -154,14 +155,44 @@ h1 {
 	transition:.3s all;
 }
 
-.nav-container ul li a:hover {
+.nav-container>.menu>li>a:hover {
 	color: rgb(255,218,68);
 	font-family: 'RobotoSlab-Regular', serif;
 	font-size: 16px;
 	text-align: center;
 	padding:10px 35px 9px 35px;
 	background: rgb(42,42,42);
+}
 
+.nav-container>.menu>li>ul{
+
+	position: absolute;
+	left: -40px;
+	margin-top: -1140px;
+	transition:0.3s all;
+}
+.nav-container>.menu>li:hover>ul{
+	margin-top: 5px;
+}
+.nav-container>.menu>li>ul>li{
+	display: block;
+	text-align: center;
+}
+.nav-container>.menu>li>ul>li>a{
+	font-size: 14px;
+	display: inline-block;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	padding: 5px 2px;
+	width: 175px;
+	background: rgb(42,42,42);
+	color: white;
+	text-decoration: none;
+	font-family: 'RobotoSlab-Regular', serif;
+}
+.nav-container>.menu>li>ul>li>a:hover{
+    background: rgb(104,7,27);
 }
 
 
@@ -1268,3 +1299,4 @@ display: none;
 	.cos-link .twit a span{background:#00b6ec;} .cos-link .fb a span{background:#425497;} 
 	.cos-link .vk a span{background:#536e8f;} .cos-link .gplus a span{background:#de4241;}
 	.cos-link li a:hover span{background: transparent;};
+
