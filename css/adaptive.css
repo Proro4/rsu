@@ -10,6 +10,7 @@
 }
 @media screen and (max-width: 1024px){
 	.slide-text,.invest-project{bottom: 25px;}
+	.cos-link li{margin-left: 0%;}
 
 }
 @media screen and (max-width: 1018px){
@@ -61,6 +62,8 @@ form.search_block{margin-left: 0; margin-right: 0;}
  .p-content{padding-top: 13px;    font-size: 13px;
     line-height: 16px;}
     .download-button:before,.download-button:after,.button-events:before,.button-events:after,.button-news:after,.button-news:before{    width: 20%;}
+    .c45{width: 100%;}
+	.title-page:after,.title-page:before{width: 20%;}
 }
 @media screen and (max-width: 660px){
 .img-events img{
@@ -69,11 +72,15 @@ form.search_block{margin-left: 0; margin-right: 0;}
 }
 .events-content{margin-top: 30px;}
 .p-events-content{width: 90%; padding-left: 10%;margin-right: 0px;}
+.c33,.c64{
+	width: 100%; text-align: center;
+}
 }
 @media screen and (max-width: 590px){
 	.search_block{width:180px;}
 }
 @media screen and (max-width: 550px){
+	.lang{display: none;}
 	.header{ height: 248px;}
 	.search_block{    display: block;
     width: 90%;
@@ -81,6 +88,10 @@ form.search_block{margin-left: 0; margin-right: 0;}
     .slide-text{display: none;}
     .invest-project{    top: 280px;}
     .a-news{    margin-top: 15px;    line-height: 14px;}
+    .top-height{
+
+	margin-top: 283px;
+    }
 }
 @media screen and (max-width: 500px){
 	.download-button:before,.download-button:after,.button-events:before,.button-events:after,.button-news:after,.button-news:before{    width: 10%;}
