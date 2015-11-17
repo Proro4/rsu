@@ -16,7 +16,7 @@ $('.lang').on('click',function(){
 
 	var lengthLi = $('.menu-pop-up li').length
 	var heightLi = $('.menu-pop-up li:eq(2)').height();
-	var heightMenu = (lengthLi+3) * heightLi;
+	var heightMenu = (lengthLi) * heightLi;
 	$('.menu-pop-up').click(function(){
 		if($(this).height() == 48){
 		$(this).animate({height:heightMenu},300)
