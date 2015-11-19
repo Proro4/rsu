@@ -1078,7 +1078,7 @@ display: none;
     height: 17px;
         margin-top: 50px;
         margin-right: 10px;
-        width: 55px;
+        width: 65px;
         padding-right: 15px;
         cursor: pointer;
         float: right;
@@ -1419,3 +1419,32 @@ display: none;
     }
      .news-page .pagination{margin-top: 35px;margin-bottom: 15px;}
     .news-page{background: white;}
+
+    .lightbox{ 
+    	position: fixed;
+    	height: 100%;
+    	width: 100%;
+    	background: rgba(0,0,0,.8);
+    	left:0;
+    	top: 0;
+    	display: none;
+    	z-index: 1000;}
+
+    .lightbox span{
+	position: relative;
+    	width: 70%;
+    	min-height: 100px;
+    	background: white;
+		display: block;
+		margin: 0 auto;
+		margin-top: 15%;
+		padding: 20px;
+    }
+    .lightbox span i{
+    	position: absolute;
+		top: 15px;
+		right: 15px;
+		font-style: normal;
+    font-family: sans-serif;
+    cursor: pointer;
+    }

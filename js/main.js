@@ -1,5 +1,11 @@
 $(document).ready(function(){
 	
+	$('.review-but').on('click',function(){
+		$('.lightbox').css('display','block');
+	})
+	$('.lightbox').on('click',function(){
+		$(this).css('display','none');
+	})
 
 	$('.arrow-to-top').click(function() {
 		$('body,html').animate({scrollTop:0},800);
