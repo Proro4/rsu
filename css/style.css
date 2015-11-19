@@ -484,6 +484,17 @@ transition:.3s all;
 	margin-top: 13px;
 	padding-bottom: 75px;
 }
+.text-page.links .left-column{
+	padding: 0;
+	min-height: 500px;
+	background: white;
+}
+.text-page.links .left-column .down-doc {margin-top: 0; padding-top: 0; padding-left: 0;}
+.text-page.links .left-column .down-doc li{background: none; padding-left: 0; margin-top: 0;}
+.text-page.links .left-column .down-doc li:nth-child(2n){background: #f8f8f8;}
+.text-page.links .left-column .down-doc li a{    background: url(../img/arrow-list.png) no-repeat 7px 14px;}
+.text-page.links .left-column .down-doc li a:hover{text-decoration:underline;}
+.text-page.links .left-column .title-page:before,.text-page.links .left-column .title-page:after{ width: 28%;}
 
 .text-page .right-column .download-button{margin: 0;}
 .text-page .right-column .events-content {	padding-bottom: 25px;}
@@ -797,7 +808,7 @@ transition:.3s all;
 
 .footer {
 	width: 100%;
-	
+	margin-top: 15px;
 	background: rgb(50,59,67);
 	clear: both;
 }
@@ -1051,6 +1062,7 @@ display: none;
 	    cursor:pointer;
 	    position: relative;
 	    bottom: 20px;
+	    padding-left: 0;
 }
 .menu-pop-up li{
 	width: 100%;
@@ -1308,7 +1320,7 @@ display: none;
 	.print-link a{ color: #00395f; text-decoration: none; font-family: 'Roboto Slab'; background: url(../img/print-icon.png)no-repeat left; padding-left: 30px;}
 	.cos-link{ width: 100%; background: white;display:inline-block;}
 	.cos-link ul{
-		padding: 8px;
+		padding: 0px 8px;
 	}
 	.cos-link li:first-child{margin-left: 0;}
 	.cos-link li{ margin-left:9%; display: inline-block; height: 30px; width: 175px; text-align: right;}

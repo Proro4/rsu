@@ -77,6 +77,7 @@ form.search_block{margin-left: 0; margin-right: 0;}
 .c33,.c64{
 	width: 100%; text-align: center;
 }
+.text-page.links .left-column .title-page:before,.text-page.links .left-column .title-page:after{ width: 18%;}
 }
 @media screen and (max-width: 590px){
 	.search_block{width:180px;}
@@ -115,6 +116,8 @@ form.search_block{margin-left: 0; margin-right: 0;}
     .p-events-content{padding-left: 2%;margin-left: 0%;    float: left;}
 	.blue-button{margin-top: 15px}
 	.download-button:before, .download-button:after, .button-events:before, .button-events:after, .button-news:after, .button-news:before{width: 0;}
+
+.text-page.links .left-column .title-page:before,.text-page.links .left-column .title-page:after{ width: 5%;}
 }
 
 @media screen and (max-width: 360px){
