@@ -95,6 +95,7 @@ form.search_block{margin-left: 0; margin-right: 0;}
 
 	margin-top: 295px;
     }
+    .document-page .print-link{margin-left: 5px;}
 }
 @media screen and (max-width: 500px){
 	.download-button:before,.download-button:after,.button-events:before,.button-events:after,.button-news:after,.button-news:before{    width: 10%;}
