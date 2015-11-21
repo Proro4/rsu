@@ -14,6 +14,14 @@ $(document).ready(function(){
 	// 	console.log($(this).val());
 	// })
 
+	//hover gallery
+	$('.gallery-block').mouseenter(function(){
+			$(this).find('p').animate({'bottom':'20px'},300);
+	})
+	$('.gallery-block').mouseleave(function(){
+			$(this).find('p').animate({'bottom':'-100px'},300);
+	})
+
 
 
 	//first-block calendar text

@@ -9,6 +9,8 @@
 
 }
 @media screen and (max-width: 1024px){
+	.gallery-block-line .gallery-block:first-child{margin-left: 3px;}
+	.gallery-block{width: 235px; height: 143px; margin-left: 14px;}
 	.slide-text,.invest-project{bottom: 25px;}
 	.cos-link li{margin-left: 0%;}
 
@@ -72,6 +74,7 @@ form.search_block{margin-left: 0; margin-right: 0;}
 	.calendar h2:before,.calendar h2:after{width: 180px;}
 	.calendar .btn-prev{left: 200px;}
 	.calendar .btn-next{right: 200px;}
+	.gallery-block-line .gallery-block:nth-child(3n){display: none;}
 }
 @media screen and (max-width: 660px){
 .img-events img{
@@ -112,6 +115,9 @@ form.search_block{margin-left: 0; margin-right: 0;}
     .calendar .event:after{bottom: 1px; right: 1px;}
 }
 @media screen and (max-width: 500px){
+
+	.gallery-block-line .gallery-block:first-child{  margin-left: 10%;}
+	.gallery-block{width: 80%; height: 143px; margin-left: 10%;}
 	.download-button:before,.download-button:after,.button-events:before,.button-events:after,.button-news:after,.button-news:before{    width: 10%;}
 	.a-news {
     margin-top: 165px;
