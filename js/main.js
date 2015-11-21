@@ -1,4 +1,23 @@
 $(document).ready(function(){
+
+
+	//pop-Up calendar
+	$('.pop-up-time-title').on('click',function(){
+		if($(this).parent().height() == 46){
+			$(this).parent().animate({'height':'100px'},300);
+		}
+		else{
+			$(this).parent().animate({'height':'46px'},300);	
+		}
+	})
+	// $('.calendar-month select').on('click',function(){
+	// 	console.log($(this).val());
+	// })
+
+
+
+	//first-block calendar text
+	// $('.day-event .day-text:eq(0)').css({'margin-top':"25px"})
 	
 	$('.review-but').on('click',function(){
 		$('.lightbox').css('display','block');

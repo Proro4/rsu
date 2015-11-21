@@ -1448,3 +1448,9 @@ display: none;
     font-family: sans-serif;
     cursor: pointer;
     }
+    .contacts{margin-bottom: 35px;}
+    .contacts iframe{width: 60%; height: 315px;}
+    .contact-info{display: inline-block;    width: 39%;vertical-align: top;}
+    .contact-info h2{margin-top: 10px; text-align:center; text-transform: uppercase; font-family: 'RobotoSlab-Regular'; font-family: 18px; color: #336d83; font-weight: normal;}
+    .contact-info ul{padding-left: 0;}
+    .contact-info ul li{display: block; border-top: 1px solid #eaeaea; padding: 9px 0 9px 25px; font-family: 'OpenSans'; font-size: 14px;}

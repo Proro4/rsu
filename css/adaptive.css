@@ -14,6 +14,7 @@
 
 }
 @media screen and (max-width: 1018px){
+	.pop-up-time-title{width: 96%;}
 	.download-documents-box,.left-column{width: 100%;}
  	a.button-popular,.gallery,.last-docs-box{width: 100%;}
 	.button-last-docs{width: 100%;}
@@ -66,6 +67,11 @@ form.search_block{margin-left: 0; margin-right: 0;}
     .download-button:before,.download-button:after,.button-events:before,.button-events:after,.button-news:after,.button-news:before{    width: 20%;}
     .c45{width: 100%;}
 	.title-page:after,.title-page:before{width: 20%;}
+	.calendar table{width: 518px;}
+	.calendar td{width: 70px;}
+	.calendar h2:before,.calendar h2:after{width: 180px;}
+	.calendar .btn-prev{left: 200px;}
+	.calendar .btn-next{right: 200px;}
 }
 @media screen and (max-width: 660px){
 .img-events img{
@@ -78,9 +84,13 @@ form.search_block{margin-left: 0; margin-right: 0;}
 	width: 100%; text-align: center;
 }
 .text-page.links .left-column .title-page:before,.text-page.links .left-column .title-page:after{ width: 18%;}
+.contacts iframe,.contact-info{width: 95%; display: block; margin:0 auto;}
 }
 @media screen and (max-width: 590px){
 	.search_block{width:180px;}
+	.calendar h2:before,.calendar h2:after{width: 120px;}
+	.calendar .btn-prev{left: 150px;}
+	.calendar .btn-next{right: 150px;}
 }
 @media screen and (max-width: 550px){
 	.text-page span img{width: 100%;}
@@ -97,6 +107,9 @@ form.search_block{margin-left: 0; margin-right: 0;}
 	margin-top: 295px;
     }
     .document-page .print-link{margin-left: 5px;}
+    .calendar table { width: 308px;}
+    .calendar td {    width: 40px;     height: 32px;     line-height: 32px;}
+    .calendar .event:after{bottom: 1px; right: 1px;}
 }
 @media screen and (max-width: 500px){
 	.download-button:before,.download-button:after,.button-events:before,.button-events:after,.button-news:after,.button-news:before{    width: 10%;}
@@ -108,6 +121,9 @@ form.search_block{margin-left: 0; margin-right: 0;}
     margin-bottom: 5px;}
 .news-content{margin-bottom: 25px;}
 .news-date{top: 130px; left: 10px;}
+	.calendar h2:before,.calendar h2:after{width: 70px;}
+	.calendar .btn-prev{left: 90px;}
+	.calendar .btn-next{right: 90px;}
 }
 @media screen and (max-width: 450px){
 	.logo{ width: 25%;}
@@ -122,4 +138,7 @@ form.search_block{margin-left: 0; margin-right: 0;}
 
 @media screen and (max-width: 360px){
 	.events-date{top:140px; display: none;}
+	.calendar h2:before,.calendar h2:after{width: 30px;}
+	.calendar .btn-prev{left: 40px;}
+	.calendar .btn-next{right: 40px;}
 }
