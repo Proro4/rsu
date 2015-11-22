@@ -1,5 +1,56 @@
 $(document).ready(function(){
 
+	//stars
+	$('.1').hover(
+         function(){ $(this).addClass('ratings');},
+         function(){ $(this).removeClass('ratings');
+    })
+         $('.2').hover( 
+         function(){ $(this).parent().find('.1').addClass('ratings'); $(this).parent().find('.2').addClass('ratings');
+    },
+         function(){ $(this).parent().find('.1').removeClass('ratings'); $(this).parent().find('.2').removeClass('ratings');    
+    })
+         $('.3').hover(
+         function(){ $(this).parent().find('.1').addClass('ratings'); $(this).parent().find('.2').addClass('ratings');
+                     $(this).parent().find('.3').addClass('ratings');    
+    },
+         function(){ $(this).parent().find('.1').removeClass('ratings'); $(this).parent().find('.2').removeClass('ratings');
+                     $(this).parent().find('.3').removeClass('ratings');
+    })
+         $('.4').hover(
+         function(){ $(this).parent().find('.1').addClass('ratings'); $(this).parent().find('.2').addClass('ratings');
+                     $(this).parent().find('.3').addClass('ratings'); $(this).parent().find('.4').addClass('ratings');    
+    },
+         function(){ $(this).parent().find('.1').removeClass('ratings'); $(this).parent().find('.2').removeClass('ratings');
+                     $(this).parent().find('.3').removeClass('ratings'); $(this).parent().find('.4').removeClass('ratings');
+    })
+         $('.5').hover(
+         function(){ $(this).parent().find('.1').addClass('ratings'); $(this).parent().find('.2').addClass('ratings');
+                     $(this).parent().find('.3').addClass('ratings'); $(this).parent().find('.4').addClass('ratings'); 
+                     $(this).parent().find('.5').addClass('ratings'); 
+    },
+         function(){ $(this).parent().find('.1').removeClass('ratings'); $(this).parent().find('.2').removeClass('ratings');
+                     $(this).parent().find('.3').removeClass('ratings'); $(this).parent().find('.4').removeClass('ratings');
+                     $(this).parent().find('.5').removeClass('ratings');
+    })
+         $('.1').click(function(){
+             
+             alert('1'); 
+         });
+           $('.2').click(function(){            
+             alert('2'); 
+         })
+            $('.3').click(function(){
+             alert('3'); 
+         }) 
+            $('.4').click(function(){
+             alert('4'); 
+         })
+            $('.5').click(function(){
+             alert('5'); 
+         })
+	
+
 	// img news 
 	$(".news-content .content-photo").each(function(){
 		var contFoto = $(".news-content").find('.content-photo')
