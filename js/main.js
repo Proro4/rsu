@@ -1,6 +1,13 @@
 $(document).ready(function(){
 
+	// img news 
+	$(".news-content .content-photo").each(function(){
+		var contFoto = $(".news-content").find('.content-photo')
 
+	if($(".news-content").find('.content-photo').hasClass('content-photo') == true){
+		$(this).find('.a-news').css('margin',' 28px 0 18px 285px')
+	}
+})
 	//pop-Up calendar
 	$('.pop-up-time-title').on('click',function(){
 		if($(this).parent().height() == 46){
@@ -28,10 +35,14 @@ $(document).ready(function(){
 	// $('.day-event .day-text:eq(0)').css({'margin-top':"25px"})
 	
 	$('.review-but').on('click',function(){
+		var lightboxId = $(this).parent().attr('doc');
+		$('#'+lightboxId+'').css('display','block');
 		$('.lightbox').css('display','block');
+
 	})
 	$('.lightbox').on('click',function(){
 		$(this).css('display','none');
+		$(this).find('span').css('display','none');
 	})
 
 	$('.arrow-to-top').click(function() {

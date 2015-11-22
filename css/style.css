@@ -297,9 +297,8 @@ h1 {
 
 
 .content-photo {
-	width: 270px;
+	width: 280px;
 	height: 135px;
-	position: absolute;
 	top: -13px;
 	left: 10px;
 	float: left;
@@ -337,7 +336,7 @@ h1 {
 	font-size: 15.5px;
 	text-decoration: none;
 	color: rgb(104,7,27);
-	margin: 28px 0 18px 280px;
+	margin: 28px 0 18px 0;
 	cursor: pointer;
 	padding:0 20px 0 10px;
 	font-family: 'RobotoSlab-Regular', serif;
@@ -352,6 +351,7 @@ h1 {
 	line-height: 18px;
 	color: rgb(0,0,0);
 	margin:0 26px 0 10px;
+	clear: both;
 }
 
 .all-news-button-box {
@@ -456,25 +456,30 @@ transition:.3s all;
 	color:rgb(255,255,255);
 	text-align: center;
 	cursor: pointer;
+	position: relative;
+
 }
 
 .button-events:before {
+	position: absolute;
+	left: 0;
+	top:49%;
 	content: "";
 	display: block;
 	float: left;
-	width: 80px;
+	width: 70px;
 	height: 1px;
 	background:rgb(251,211,78);
-	margin: 9px 20px 10px 10px;
 }
-.button-events:after {
+.button-events:after {position: absolute;
+	right: 0;
+	top:49%;
 	content: "";
 	display: block;
 	float: right;
-	width: 80px;
+	width: 70px;
 	height: 1px;
 	background:rgb(251,211,78);
-	margin: 9px 10px 10px 20px;
 }
 
 .events-content {
@@ -858,6 +863,7 @@ transition:.3s all;
 .info-box {
 	width: 48%;
 	height: auto;
+	min-height: 200px;
 	overflow: hidden;
 	float: left;
 	margin: 0 0px 0 19px;
@@ -1388,6 +1394,7 @@ display: none;
      }
 	.right-menu ul a:hover{color:rgba(255,255,255,.7);}
      .right-menu ul :last-child a{border:0;}
+
      .document-page .print-link{display: inline-block; border:0; margin-top: 15px; width: auto; margin-left: 40%;}
      .down-but,.review-but{ color:white; border:1px solid white;display: inline-block; text-decoration: none; padding: 3px 5px; text-transform: uppercase;
        font-family: 'RobotoSlab-Regular'; font-size: 14px; margin-left: 15px;}
@@ -1439,6 +1446,7 @@ display: none;
 		margin: 0 auto;
 		margin-top: 15%;
 		padding: 20px;
+    	display: none;
     }
     .lightbox span i{
     	position: absolute;
