@@ -224,10 +224,10 @@ h1 {
 	float: left;
 	margin:0 0 20px 0px;
 	background: rgb(255,255,255);
-	position: relative;
-	padding: 60px 0px 0 0px; 
+	position: relative; 
 }
-
+.text-page .left-column {
+	padding: 60px 0px 0 0px; }
 .text-page .left-column .last-docs-date{
 	width: 160px;
     background: url(../img/ribbon.png) no-repeat;
