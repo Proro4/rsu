@@ -120,11 +120,20 @@ $(document).ready(function(){
 		});
 
 $('.arrow-to-top').fadeOut();
-$('.lang').on('click',function(){
+$('.lang .lang-but').on('click',function(){
+	if($('.lang').height() == 17){ 
 		$('.lang').animate({'height':'50px'},200)
-
-
+		$('.lang-but').css('display','none');
+		}
 	})
+		
+	$('.lang').on('click',function(){
+	if($('.lang').height() == 50){ 
+		$('.lang').animate({'height':'17px'},200)
+		$('.lang-but').css('display','block');
+		}
+	})
+	
 
 
 	var lengthLi = $('.menu-pop-up li').length
