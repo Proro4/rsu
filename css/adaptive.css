@@ -25,7 +25,7 @@
 	.footer-container {width: 740px; }
 	.button-events,.right-column{width: 100%; margin-left: 0;}
 	.events-date{ left: initial; right: 0; top: 0;}
-	.p-events-content{float: right; width: 50%; margin-left: 0; margin-right: 50px;font-size: 18px;}
+	.p-events-content{float: right; width: 84%; margin-left: 0; margin-right: 50px;font-size: 18px; padding-right: 40px;}
 	.invest-project{right: 1%;}
 	.slide-text{left: 1%;}
 	form.search_block{margin-left: 5px;     margin-top: 33px }
@@ -77,6 +77,7 @@ form.search_block{margin-left: 0; margin-right: 0;}
 	.gallery-block-line .gallery-block:nth-child(3n){display: none;}
 }
 @media screen and (max-width: 660px){
+	.p-events-content{float: right; width: 89%; padding-right: 40px;}
 .img-events img{
 	margin: 0 auto;
 	display: block;
@@ -115,7 +116,6 @@ form.search_block{margin-left: 0; margin-right: 0;}
     .calendar .event:after{bottom: 1px; right: 1px;}
 }
 @media screen and (max-width: 500px){
-
 	.gallery-block-line .gallery-block:first-child{  margin-left: 10%;}
 	.gallery-block{width: 80%; height: 143px; margin-left: 10%;}
 	.download-button:before,.download-button:after,.button-events:before,.button-events:after,.button-news:after,.button-news:before{    width: 10%;}

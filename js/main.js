@@ -1,5 +1,23 @@
 $(document).ready(function(){
 
+	//gallery light-box	
+	$('.gallery-block img').on('click',function(){
+		$('.gallery-lightbox').css('top','0');
+	})
+	$('.content i').on('click',function(){
+		$('.gallery-lightbox').css('top','-10000px');
+	})
+
+
+
+
+	//calendars-day
+	var b =-1;
+	for(i = 0; i <= $('.day-event').length;i++){
+		b = b+1;
+		var c = $('.day-event:eq('+b+')').attr('date-day')-1
+		$(".calentdar-days td:eq("+c+")").addClass('event')
+	}
 	//stars
 	$('.1').hover(
          function(){ $(this).addClass('ratings');},
@@ -33,20 +51,20 @@ $(document).ready(function(){
                      $(this).parent().find('.3').removeClass('ratings'); $(this).parent().find('.4').removeClass('ratings');
                      $(this).parent().find('.5').removeClass('ratings');
     })
-         $('.1').click(function(){
+         $('.gallery-page .1').click(function(){
              
              alert('1'); 
          });
-           $('.2').click(function(){            
+           $('.gallery-page .2').click(function(){            
              alert('2'); 
          })
-            $('.3').click(function(){
+            $('.gallery-page .3').click(function(){
              alert('3'); 
          }) 
-            $('.4').click(function(){
+            $('.gallery-page .4').click(function(){
              alert('4'); 
          })
-            $('.5').click(function(){
+            $('.gallery-page .5').click(function(){
              alert('5'); 
          })
 	
