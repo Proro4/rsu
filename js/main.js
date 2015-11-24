@@ -103,15 +103,25 @@ $(document).ready(function(){
 	//first-block calendar text
 	// $('.day-event .day-text:eq(0)').css({'margin-top':"25px"})
 	
-	$('.review-but').on('click',function(){
-		var lightboxId = $(this).parent().attr('doc');
-		$('#'+lightboxId+'').css('display','block');
-		$('.lightbox').css('display','block');
+	// $('.review-but').on('click',function(){
+	// 	var lightboxId = $(this).parent().attr('doc');
+	// 	$('#'+lightboxId+'').css('display','block');
+	// 	$('.lightbox').css('display','block');
 
+	// })
+	// $('.lightbox').on('click',function(){
+	// 	$(this).css('display','none');
+	// 	$(this).find('span').css('display','none');
+	// })
+	$('.review-but').on('click',function(){
+		var textLightbox = $(this).parent().find('b').html()
+		$('.lightbox p').html(textLightbox);
+		$('.lightbox').css('display','block');
 	})
-	$('.lightbox').on('click',function(){
-		$(this).css('display','none');
-		$(this).find('span').css('display','none');
+	$('.lightbox span i').on('click',function(){
+
+		$('.lightbox p').html('');
+		$('.lightbox').css('display','none');
 	})
 
 	$('.arrow-to-top').click(function() {

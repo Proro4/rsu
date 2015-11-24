@@ -1,3 +1,11 @@
+
+@media screen and (max-width: 1666px){
+	  .slider .slider-container .item img { height: 1200px; }
+}
+@media screen and (max-width: 1466px){
+	  .slider .slider-container .item img { height: 900px; }
+
+}
 @media screen and (max-width: 1366px){
 	  .slider .slider-container .item img { height: 900px; }
 	  .arrow-to-top{	right: 0 !important;	bottom: 0 !important;}
