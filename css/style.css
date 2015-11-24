@@ -1402,7 +1402,7 @@ display: none;
      .pagination li a{ color: white; display: inline-block; transition:.2s all; height: 25px; width: 25px; line-height: 25px; text-decoration: none; padding: 4px; }
      .pagination li a:hover{background: #99b6c1; color:#336d83;}
      .print-link a:hover{text-decoration: underline;}
-     .news-block{ padding: 10px 0; position: relative;}
+     .news-block{ padding: 10px 0; position: relative; clear: both;}
      .news-page .news-date{    position: relative;
     left: 0;
     top: 0;
