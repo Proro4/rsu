@@ -252,21 +252,27 @@ h1 {
 	color:rgb(255,255,255);
 	text-align: center;
 	cursor: pointer;
+	position: relative;
+	height: 20px;
 }
 
 .button-news:before {
+	position: absolute;
+	top:25%;
 	content: "";
 	display: block;
-	float: left;
+	left:0;
 	width: 282px;
 	height: 1px;
 	background:rgb(251,211,78);
 	margin: 9px 20px 10px 10px;
 }
 .button-news:after {
+	position: absolute;
+	top: 25%;
 	content: "";
 	display: block;
-	float: right;
+	right:0;
 	width: 282px;
 	height: 1px;
 	background:rgb(251,211,78);
@@ -401,21 +407,26 @@ transition:.3s all;
 	text-transform: uppercase;
 	color:rgb(255,255,255);
 	text-align: center;
+	position: relative;
 }
 
 .button-popular:before {
+	position: absolute;
+	left:0;
+	top: 23%;
 	content: "";
 	display: block;
-	float: left;
 	width: 171px;
 	height: 1px;
 	background:rgb(251,211,78);
 	margin: 9px 20px 10px 10px;
 }
 .button-popular:after {
+	position: absolute;
+	right:0;
+	top: 23%;
 	content: "";
 	display: block;
-	float: right;
 	width: 171px;
 	height: 1px;
 	background:rgb(251,211,78);
@@ -668,12 +679,15 @@ transition:.3s all;
 	text-transform: uppercase;
 	color:rgb(255,255,255);
 	text-align: center;
+	position: relative;
 }
 
 .button-last-docs:before {
+	position: absolute;
+	top: 23%;
+	left:0;
 	content: "";
 	display: block;
-	float: left;
 	width: 65px;
 	height: 1px;
 	background:rgb(251,211,78);
@@ -681,9 +695,11 @@ transition:.3s all;
 }
 
 .button-last-docs:after {
+	position: absolute;
+	top: 23%;
+	right:0;
 	content: "";
 	display: block;
-	float: right;
 	width: 65px;
 	height: 1px;
 	background:rgb(251,211,78);
@@ -760,12 +776,15 @@ transition:.3s all;
 	text-transform: uppercase;
 	color:rgb(255,255,255);
 	text-align: center;
+	position: relative;
 }
 
 .button-new-gallery:before {
+	position: absolute;
+	left: 0;
+	top:23%;
 	content: "";
 	display: block;
-	float: left;
 	width: 127px;
 	height: 1px;
 	background:rgb(251,211,78);
@@ -773,9 +792,11 @@ transition:.3s all;
 }
 
 .button-new-gallery:after {
+	position: absolute;
+	right: 0;
+	top:23%;
 	content: "";
 	display: block;
-	float: right;
 	width: 127px;
 	height: 1px;
 	background:rgb(251,211,78);
@@ -1420,6 +1441,14 @@ display: none;
      .print-link a:hover{text-decoration: underline;}
      .news-block{ padding: 10px 0; position: relative; clear: both;}
      .news-block>img{float: left;}
+     .pagination li span{
+ display: inline-block;
+    transition: .2s all;
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
+    text-decoration: none;
+    padding: 4px;}
      .news-page .news-date{    position: relative;
     left: 0;
     top: 0;

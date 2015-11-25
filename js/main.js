@@ -113,6 +113,10 @@ $(document).ready(function(){
 	// 	$(this).css('display','none');
 	// 	$(this).find('span').css('display','none');
 	// })
+var html_to_print=$('div#to_print').html()
+var iframe=$('<iframe id="print_frame">'); // создаем iframe в переменную
+$('body').append(iframe); //добавляем эту переменную с iframe в наш body (в самый конец)
+
 	$('.review-but').on('click',function(){
 		var textLightbox = $(this).parent().find('b').html()
 		$('.lightbox p').html(textLightbox);
