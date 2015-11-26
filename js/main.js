@@ -15,9 +15,49 @@ $(document).ready(function(){
 	var b =-1;
 	for(i = 0; i <= $('.day-event').length;i++){
 		b = b+1;
-		var c = $('.day-event:eq('+b+')').attr('date-day')-1
-		$(".calentdar-days td:eq("+c+")").addClass('event')
+		var day = $('.day-event:eq('+b+')').attr('date-day')-1
+		var month = $('.day-event:eq('+b+')').attr('date-month')
+		var month = $('.day-event:eq('+b+')').attr('date-year')
+
+		var yearC = $('.calentdar-days td').attr('date-month')	
+		var monthС = $('.calentdar-days td').attr('date-year')	
+		if($('.day-event:eq('+b+')').attr('date-year') == yearC)
+			if($('.day-event:eq('+b+')').attr('date-month') == monthС){
+				$(".calentdar-days td:eq("+day+")").addClass('event')
+			}
+		}
+
 	}
+	$('.btn-prev').on('click',function(){
+		// if($('.day-event').attr('date-month') = month)
+		var b =-1;
+		for(i = 0; i <= $('.day-event').length;i++){
+			b = b+1;
+			var day = $('.day-event:eq('+b+')').attr('date-day')-1
+			var month = $('.day-event:eq('+b+')').attr('date-month')
+			var monthС = $('.calentdar-days td').attr('date-month')	
+			if($('.day-event:eq('+b+')').attr('date-year') == yearC)
+				if($('.day-event:eq('+b+')').attr('date-month') == monthС){
+					$(".calentdar-days td:eq("+day+")").addClass('event')
+				}
+			}	
+		}
+	})
+	$('.btn-next').on('click',function(){
+		var b =-1;
+		for(i = 0; i <= $('.day-event').length;i++){
+			b = b+1;
+			var day = $('.day-event:eq('+b+')').attr('date-day')-1
+			var month = $('.day-event:eq('+b+')').attr('date-month')
+			var monthС = $('.calentdar-days td').attr('date-month')	
+			if($('.day-event:eq('+b+')').attr('date-year') == yearC)
+				if($('.day-event:eq('+b+')').attr('date-month') == monthС){
+					$(".calentdar-days td:eq("+day+")").addClass('event')
+				}
+			}
+		}
+	})
+
 	//stars
 	$('.1').hover(
          function(){ $(this).addClass('ratings');},
