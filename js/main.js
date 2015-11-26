@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 	//gallery light-box	
 	$('.gallery-block img').on('click',function(){
-		$('.gallery-lightbox').css('top','0');
+		$('.gallery-lightbox').css('top','180px');
 	})
 	$('.content i').on('click',function(){
 		$('.gallery-lightbox').css('top','-10000px');
