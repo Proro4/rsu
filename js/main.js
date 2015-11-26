@@ -27,7 +27,6 @@ $(document).ready(function(){
 			}
 		}
 
-	}
 	$('.btn-prev,.btn-next').on('click',function(){
 		// if($('.day-event').attr('date-month') = month)
 		var b =-1;
@@ -41,8 +40,7 @@ $(document).ready(function(){
 					$(".calentdar-days td:eq("+day+")").addClass('event')
 				}
 			}	
-		}
-	})
+		})
 	
 	//stars
 	$('.1').hover(
