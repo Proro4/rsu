@@ -1526,7 +1526,7 @@ display: none;
 	top:-1000%;
 	z-index: 500;
 }
- .content{color:#777;font:12px/1.4 "helvetica neue",arial,sans-serif;width:900px; height: 500px; margin:20px auto; position: relative;}
+ .content{color:#777;font:12px/1.4 "helvetica neue",arial,sans-serif;width:900px; height: 500px; margin:20px auto; position: relative; padding-top: 170px;}
   .content i{cursor:pointer; position: absolute; right: 3px; top: 0px; color: black; z-index: 2; font-style: normal; font-family: sans-serif;}
           
             .content p{margin:0 0 20px}
