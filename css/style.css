@@ -195,12 +195,10 @@ h1 {
 .container {
 	width: 100%;
 	height: auto;
-	
 	margin: 0 auto;
 	overflow: hidden;
 	position: absolute;
 	top: 0;
-	z-index: 1;
 	background: rgb(240,240,240);
 }
 
@@ -1526,9 +1524,9 @@ display: none;
 	top:-1000%;
 	z-index: 500;
 }
- .content{color:#777;font:12px/1.4 "helvetica neue",arial,sans-serif;width:900px; height: 500px; margin:20px auto; position: relative; padding-top: 170px;}
+ .content{color:#777;font:12px/1.4 "helvetica neue",arial,sans-serif;width:900px; height: 500px; margin:20px auto; position: relative; padding-top: 00px;}
   .content i{cursor:pointer; position: absolute; right: 3px; top: 0px; color: black; z-index: 2; font-style: normal; font-family: sans-serif;}
-          
+          .slide-galleria{display: none; position: relative; z-index: 501;}
             .content p{margin:0 0 20px}
             .contenta {color:#22BCB9;text-decoration:none;}
             .content .cred{margin-top:20px;font-size:11px;}
