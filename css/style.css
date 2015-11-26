@@ -1447,6 +1447,9 @@ display: none;
     line-height: 25px;
     text-decoration: none;
     padding: 4px;}
+    .pagination .active{ background: white;}
+    .pagination .active a{color: #336d83;}
+        .pagination .active a:hover{color: #336d83; background: none;}
      .news-page .news-date{    position: relative;
     left: 0;
     top: 0;
