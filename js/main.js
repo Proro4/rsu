@@ -3,11 +3,11 @@ $(document).ready(function(){
 	//gallery light-box	
 	$('.gallery-block img').on('click',function(){
 		$('.gallery-lightbox').css('top','0px');
-		$('.slide-galleria').css('display','block');
+		$('.slide-galleria').css('top','50px');
 	})
 	$('.gallery-lightbox,.content i').on('click',function(){
 		$('.gallery-lightbox').css('top','-10000px');
-		$('.slide-galleria').css('display','none');
+		$('.slide-galleria').css('top','-10000px');
 
 	})
 

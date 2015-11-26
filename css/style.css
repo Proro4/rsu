@@ -1526,7 +1526,7 @@ display: none;
 }
  .content{color:#777;font:12px/1.4 "helvetica neue",arial,sans-serif;width:900px; height: 500px; margin:20px auto; position: relative; padding-top: 00px;}
   .content i{cursor:pointer; position: absolute; right: 3px; top: 0px; color: black; z-index: 2; font-style: normal; font-family: sans-serif;}
-          .slide-galleria{display: none; position: relative; z-index: 501;}
+          .slide-galleria{display: block; top:-5000px; position: fixed; z-index: 501;}
             .content p{margin:0 0 20px}
             .contenta {color:#22BCB9;text-decoration:none;}
             .content .cred{margin-top:20px;font-size:11px;}
