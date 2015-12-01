@@ -1507,14 +1507,14 @@ display: none;
     .gallery-date{background: url(../img/red-flag.png); height: 25px;width: 128px; position: absolute;top: 5px;left: 5px; color: white; font-family: 'OpenSans';
     text-align: center; line-height: 25px; }
     .gallery-block p{position: absolute;bottom: -100px; z-index: 1; width: 100%; background: rgba(0,0,0,.5); color: white; font-family: 'OpenSans'; padding: 5px; } 
-    .gallery-block .star{ position: absolute; right: 5px;bottom: 10px;}
-    .gallery-page .rating {
+    .star{ position: absolute; right: 5px;bottom: 10px;}
+    .rating {
     background: url(../img/star.png)no-repeat left center;
     height: 15px;
     width: 15px;
     display: inline-block;
 }
-.gallery-page .ratings{
+.gallery-page .ratings ,.carusel-item .ratings{
   background:url(../img/star-i.png)no-repeat left center;
 }
 .gallery-lightbox{

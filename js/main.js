@@ -1,4 +1,12 @@
 $(document).ready(function(){
+var date = new Date(), 
+year = date.getFullYear();
+var yearLast = year+1;
+for(var i = 0; i<=25; i++){
+	yearLast = yearLast-1;
+	$('.calendar-years select').append('<option value="'+yearLast+'">'+yearLast+'</option>')
+}	
+
 
 	//gallery light-box	
 	$('.gallery-block img').on('click',function(){
@@ -10,6 +18,7 @@ $(document).ready(function(){
 		$('.slide-galleria').css('top','-10000px');
 
 	})
+
 
 
 
@@ -44,6 +53,8 @@ $(document).ready(function(){
 				}
 			}	
 		})
+
+
 
 	// $('.calendar-month select').on("change",function(){
 	// 	var year = $('.calendar-years select').val()
@@ -93,20 +104,20 @@ $(document).ready(function(){
                      $(this).parent().find('.3').removeClass('ratings'); $(this).parent().find('.4').removeClass('ratings');
                      $(this).parent().find('.5').removeClass('ratings');
     })
-         $('.gallery-page .1').click(function(){
+         $('.gallery-page .1, .carusel-item .1').click(function(){
              
              alert('1'); 
          });
-           $('.gallery-page .2').click(function(){            
+           $('.gallery-page .2, .carusel-item .2').click(function(){            
              alert('2'); 
          })
-            $('.gallery-page .3').click(function(){
+            $('.gallery-page .3, .carusel-item .3').click(function(){
              alert('3'); 
          }) 
-            $('.gallery-page .4').click(function(){
+            $('.gallery-page .4, .carusel-item .4').click(function(){
              alert('4'); 
          })
-            $('.gallery-page .5').click(function(){
+            $('.gallery-page .5, .carusel-item .5').click(function(){
              alert('5'); 
          })
 	
