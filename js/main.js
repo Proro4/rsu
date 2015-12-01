@@ -45,14 +45,14 @@ $(document).ready(function(){
 			}	
 		})
 
-	$('.calendar-month select').on("change",function(){
-		var year = $('.calendar-years select').val()
-		var numbMonth = $(this).find('option:selected').val();
-		var nameMonth = $(this).find('option:selected').text();
-		$('.calendar .calentdar-days td').attr('date-month',numbMonth);
-		$('.calendar .month').attr('data-month',numbMonth);
-		$('.calendar .month').text(nameMonth+' '+year);
-	})
+	// $('.calendar-month select').on("change",function(){
+	// 	var year = $('.calendar-years select').val()
+	// 	var numbMonth = $(this).find('option:selected').val();
+	// 	var nameMonth = $(this).find('option:selected').text();
+	// 	$('.calendar .calentdar-days td').attr('date-month',numbMonth);
+	// 	$('.calendar .month').attr('data-month',numbMonth);
+	// 	$('.calendar .month').text(nameMonth+' '+year);
+	// })
 	// $('.calendar-years select').on("change",function(){
 	// 	var nameYear = $(this).find('option:selected').text();
 	// 	$('.calendar .calentdar-days td').attr('date-year',nameYear);

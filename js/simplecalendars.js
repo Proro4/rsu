@@ -66,39 +66,26 @@ var calendar = {
     $('.calendar .month').attr('data-month',numbMonth);
     $('.calendar .month').text(nameMonth+' '+year);
        var monthNumber = $('.month').attr('data-month');
-      if (monthNumber > 11) {
-        $('.month').attr('data-month', '0');
-        var monthNumber = $('.month').attr('data-month');
-        yearNumber = yearNumber + 1;
+    
         setMonth(parseInt(monthNumber) + 1, mon, tue, wed, thur, fri, sat, sund);
-      } else {
-        setMonth(parseInt(monthNumber) + 1, mon, tue, wed, thur, fri, sat, sund);
-      };
+
   })
     $('.calendar-years select').on("change",function(){
 
-    var nameYear = $(this).find('option:selected').val();
+    var nameYear = $(this).find('option:selected').html();
 
     $('.calendar .calentdar-days td').attr('date-year',nameYear);
     yearNumber = nameYear
+    yearNumber =yearNumber-1;
+    yearNumber =yearNumber+1;
      var monthNumber = $('.month').attr('data-month');
-      if (monthNumber < 2) {
-        $('.month').attr('data-month', '13');
-        var monthNumber = $('.month').attr('data-month');
-        yearNumber = yearNumber - 1;
+     
         setMonth(parseInt(monthNumber) - 1, mon, tue, wed, thur, fri, sat, sund);
-      } else {
-        setMonth(parseInt(monthNumber) - 1, mon, tue, wed, thur, fri, sat, sund);
-      };
+
          var monthNumber = $('.month').attr('data-month');
-      if (monthNumber > 11) {
-        $('.month').attr('data-month', '0');
-        var monthNumber = $('.month').attr('data-month');
-        yearNumber = yearNumber + 1;
+
         setMonth(parseInt(monthNumber) + 1, mon, tue, wed, thur, fri, sat, sund);
-      } else {
-        setMonth(parseInt(monthNumber) + 1, mon, tue, wed, thur, fri, sat, sund);
-      };
+
     //   var monthNumber = $('.month').attr('data-month');
     //  if (monthNumber > 11) {
     //     $('.month').attr('data-month', '0');
