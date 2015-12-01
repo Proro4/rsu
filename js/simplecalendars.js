@@ -58,6 +58,64 @@ var calendar = {
       };
     });
 
+    $('.calendar-month select').on("change",function(){
+    var year = $('.calendar-years select').val()
+    var numbMonth = $(this).find('option:selected').val()-1;
+    var nameMonth = $(this).find('option:selected').text()-1;
+    $('.calendar .calentdar-days td').attr('date-month',numbMonth);
+    $('.calendar .month').attr('data-month',numbMonth);
+    $('.calendar .month').text(nameMonth+' '+year);
+       var monthNumber = $('.month').attr('data-month');
+      if (monthNumber > 11) {
+        $('.month').attr('data-month', '0');
+        var monthNumber = $('.month').attr('data-month');
+        yearNumber = yearNumber + 1;
+        setMonth(parseInt(monthNumber) + 1, mon, tue, wed, thur, fri, sat, sund);
+      } else {
+        setMonth(parseInt(monthNumber) + 1, mon, tue, wed, thur, fri, sat, sund);
+      };
+  })
+    $('.calendar-years select').on("change",function(){
+
+    var nameYear = $(this).find('option:selected').val();
+
+    $('.calendar .calentdar-days td').attr('date-year',nameYear);
+    yearNumber = nameYear
+     var monthNumber = $('.month').attr('data-month');
+      if (monthNumber < 2) {
+        $('.month').attr('data-month', '13');
+        var monthNumber = $('.month').attr('data-month');
+        yearNumber = yearNumber - 1;
+        setMonth(parseInt(monthNumber) - 1, mon, tue, wed, thur, fri, sat, sund);
+      } else {
+        setMonth(parseInt(monthNumber) - 1, mon, tue, wed, thur, fri, sat, sund);
+      };
+         var monthNumber = $('.month').attr('data-month');
+      if (monthNumber > 11) {
+        $('.month').attr('data-month', '0');
+        var monthNumber = $('.month').attr('data-month');
+        yearNumber = yearNumber + 1;
+        setMonth(parseInt(monthNumber) + 1, mon, tue, wed, thur, fri, sat, sund);
+      } else {
+        setMonth(parseInt(monthNumber) + 1, mon, tue, wed, thur, fri, sat, sund);
+      };
+    //   var monthNumber = $('.month').attr('data-month');
+    //  if (monthNumber > 11) {
+    //     $('.month').attr('data-month', '0');
+    //     var monthNumber = $('.month').attr('data-month');
+    //     yearNumber = yearNumber + 1;
+
+    //     setMonth(parseInt(monthNumber) + 1, mon, tue, wed, thur, fri, sat, sund);
+    //   } else {
+    //     setMonth(parseInt(monthNumber) + 1, mon, tue, wed, thur, fri, sat, sund);
+    //   };
+  })
+
+
+
+
+
+
     /**
      * Get all dates for current month
      */
