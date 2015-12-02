@@ -1,8 +1,24 @@
 $(document).ready(function(){
+//Document-filtr
+$('.document-page .calendar-years select').on('change',function(){
+	var docYear = $(this).find('option:selected').val();
+	var docLength = $('.last-docs').length;
+	var b = -1;
+	$('.last-docs').css('display','none');
+	for(var i = 0; i <=docLength; i++ ){
+		b = b+1;
+			$('.last-docs:eq('+b+')[year-doc="'+docYear+'"]').css('display','block');
+		
+	}
+})
+
+
+
 var date = new Date(), 
 year = date.getFullYear();
 var yearLast = year+1;
-for(var i = 0; i<=25; i++){
+var yearLength =  year - 1992
+for(var i = 0; i<=yearLength; i++){
 	yearLast = yearLast-1;
 	$('.calendar-years select').append('<option value="'+yearLast+'">'+yearLast+'</option>')
 }	
