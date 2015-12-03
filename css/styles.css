@@ -123,6 +123,7 @@
 	top: 50%;
 	width: 32px;
     transition:.3s all;
+    cursor: pointer;
 }
 
 .calendar .btn-prev:hover,
@@ -132,12 +133,12 @@
 }
 
 .calendar .btn-prev {
-    left: 260px;
+    left: 245px;
     background: url(../img/other/arrow-calendar-left.png)no-repeat center;
 }
 
 .calendar .btn-next {
-    right: 260px;
+    right: 245px;
     background: url(../img/other/arrow-calendar-right.png)no-repeat center;
 }
 
