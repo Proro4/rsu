@@ -14,14 +14,6 @@ $('.document-page .calendar-years select').on('change',function(){
 
 
 
-var date = new Date(), 
-year = date.getFullYear();
-var yearLast = year+1;
-var yearLength =  year - 1992
-for(var i = 0; i<=yearLength; i++){
-	yearLast = yearLast-1;
-	$('.calendar-years select').append('<option value="'+yearLast+'">'+yearLast+'</option>')
-}	
 
 
 	//gallery light-box	
@@ -148,8 +140,9 @@ for(var i = 0; i<=yearLength; i++){
 })
 	//pop-Up calendar
 	$('.pop-up-time-title').on('click',function(){
+		var heightUl = $(this).parent().find('form ul').height();
 		if($(this).parent().height() == 46){
-			$(this).parent().animate({'height':'100px'},300);
+			$(this).parent().animate({'height':heightUl+70},300);
 		}
 		else{
 			$(this).parent().animate({'height':'46px'},300);	

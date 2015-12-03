@@ -26,6 +26,7 @@
     font-size: 22px;
     padding: 9px 0;
     position: relative;
+    margin-top: 0px;
 }
 .calendar h2:after{
     height: 1px;
@@ -122,14 +123,14 @@
 	position: absolute;
 	top: 50%;
 	width: 32px;
-    transition:.3s all;
+    transition:.2s all;
     cursor: pointer;
 }
 
 .calendar .btn-prev:hover,
 .calendar .btn-next:hover {
     opacity: .8;
-    transform: scale(1.2);
+    /*transform: scale(1.2);*/
 }
 
 .calendar .btn-prev {
@@ -246,3 +247,20 @@ top:49%;}
     border:1px solid #99b6c1; outline: 2px solid #336d83; cursor: pointer;  margin: 2px; font-family: 16px;}
     .calendar-years{display: block; margin: 15px 45px;}
     .calendar-month,.calendar-days{display: block; margin: 15px;}
+    .time-calendar ul{padding-left: 0;}
+    .time-calendar ul li{display: inline-block;
+    padding: 3px;
+    float: left;
+    font-family: 'opensans';
+    cursor: pointer;
+    transition:.3s all;
+        width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    border-top: 1px solid #99b6c1; 
+
+}
+.time-calendar ul li:hover{
+    /*color: #336d83;*/
+    background: #e7e7e7;
+}

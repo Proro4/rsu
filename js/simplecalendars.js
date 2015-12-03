@@ -1,4 +1,19 @@
+$(document).ready(function(){
+  var date = new Date(), 
+year = date.getFullYear();
+var yearLast = year+1;
+var yearLength =  year - 2000
+for(var i = 0; i<=yearLength; i++){
+  yearLast = yearLast-1;
+  $('.calendar-years ul').append('<li value="'+yearLast+'">'+yearLast+'</li>')
+} 
+})
+
 var calendar = {
+
+
+
+
 
   init: function() {
 
@@ -58,10 +73,10 @@ var calendar = {
       };
     });
 
-    $('.calendar-month select').on("change",function(){
+    $('.calendar-month ul li').on("click",function(){
     var year = $('.calendar-years select').val()
-    var numbMonth = $(this).find('option:selected').val()-1;
-    var nameMonth = $(this).find('option:selected').text()-1;
+    var numbMonth = $(this).val()-1;
+    var nameMonth = $(this).text()-1;
     $('.calendar .calentdar-days td').attr('date-month',numbMonth);
     $('.calendar .month').attr('data-month',numbMonth);
     $('.calendar .month').text(nameMonth+' '+year);
@@ -70,9 +85,9 @@ var calendar = {
         setMonth(parseInt(monthNumber) + 1, mon, tue, wed, thur, fri, sat, sund);
 
   })
-    $('.calendar-years select').on("change",function(){
+   $('.calendar-years ul li').on("click",function(){
+    var nameYear = $(this).text();
 
-    var nameYear = $(this).find('option:selected').html();
 
     $('.calendar .calentdar-days td').attr('date-year',nameYear);
     yearNumber = nameYear
@@ -205,7 +220,8 @@ var calendar = {
       if ($(this).hasClass('event')) {
         $('tbody.event-calendar td').removeClass('active');
         $(this).addClass('active');
-      } else {
+      } 
+      else {
         $('tbody.event-calendar td').removeClass('active');
       };
     });
@@ -234,10 +250,13 @@ var calendar = {
      */
     function displayEvent() {
       $('tbody.event-calendar td').on('click', function(e) {
+        
         $('.day-event').slideUp('fast');
         var monthEvent = $(this).attr('date-month');
+        var yearEvent = $(this).attr('date-year');
         var dayEvent = $(this).text();
-        $('.day-event[date-month="' + monthEvent + '"][date-day="' + dayEvent + '"]').slideDown('fast');
+        if($('.day-event[date-month="' + monthEvent + '"][date-day="' + dayEvent + '"][date-year="'+yearEvent+'"]').css('display') == 'none')
+          $('.day-event[date-month="' + monthEvent + '"][date-day="' + dayEvent + '"][date-year="'+yearEvent+'"]').slideDown('fast');
       });
     };
 
