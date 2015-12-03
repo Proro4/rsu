@@ -29,7 +29,7 @@
 }
 .calendar h2:after{
     height: 1px;
-    width: 230px;
+    width: 220px;
     background: #fad44f;
     content: '';
     position: absolute;
@@ -38,7 +38,7 @@
 }
 .calendar h2:before{
     height: 1px;
-    width: 230px;
+    width: 220px;
     background: #fad44f;
     content: '';
     position: absolute;
