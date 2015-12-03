@@ -80,11 +80,23 @@ var calendar = {
     yearNumber =yearNumber+1;
      var monthNumber = $('.month').attr('data-month');
      
+        var monthNumber = $('.month').attr('data-month');
+      if (monthNumber < 2) {
+        $('.month').attr('data-month', '13');
+        var monthNumber = $('.month').attr('data-month');
+        yearNumber = yearNumber - 1;
         setMonth(parseInt(monthNumber) - 1, mon, tue, wed, thur, fri, sat, sund);
-
-         var monthNumber = $('.month').attr('data-month');
-
+      } else {
+        setMonth(parseInt(monthNumber) - 1, mon, tue, wed, thur, fri, sat, sund);
+      };var monthNumber = $('.month').attr('data-month');
+      if (monthNumber > 11) {
+        $('.month').attr('data-month', '0');
+        var monthNumber = $('.month').attr('data-month');
+        yearNumber = yearNumber + 1;
         setMonth(parseInt(monthNumber) + 1, mon, tue, wed, thur, fri, sat, sund);
+      } else {
+        setMonth(parseInt(monthNumber) + 1, mon, tue, wed, thur, fri, sat, sund);
+      };
 
     //   var monthNumber = $('.month').attr('data-month');
     //  if (monthNumber > 11) {
