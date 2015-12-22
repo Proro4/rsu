@@ -1131,9 +1131,6 @@ display: none;
           overflow: hidden;
           background: white;
           height: 207px; }
-          .carusel .all-carusel .carusel-block .carusel-item:hover p{
-            bottom: 5;
-          }
           .carusel .all-carusel .carusel-block .carusel-item img {
             width: 100%; }
             .carusel .all-carusel .carusel-block .carusel-item a {
@@ -1421,7 +1418,7 @@ display: none;
      .down-but,.review-but{ color:white; border:1px solid white;display: inline-block; text-decoration: none; padding: 3px 5px; text-transform: uppercase;
        font-family: 'RobotoSlab-Regular'; font-size: 14px; margin-left: 15px;}
        .down-but:hover,.review-but:hover{opacity: .8;}
-         .review-but{background: #343d44;outline: 1px solid #343d44; display: }
+         .review-but{background: #343d44;outline: 1px solid #343d44;  }
     .down-but{background: #68071b;outline: 1px solid #68071b;}
      .document-page .last-docs{width: 97%;}
      .last-docs b{display: none;}
@@ -1495,7 +1492,7 @@ display: none;
     .contacts{margin-bottom: 35px;}
     .contacts iframe{width: 60%; height: 315px;}
     .contact-info{display: inline-block;    width: 39%;vertical-align: top;}
-    .contact-info h2{margin-top: 10px; text-align:center; text-transform: uppercase; font-family: 'RobotoSlab-Regular'; font-family: 18px; color: #336d83; font-weight: normal;}
+    .contact-info h2{margin-top: 10px; text-align:center; text-transform: uppercase; font-family: 'RobotoSlab-Regular'; font-size: 18px; color: #336d83; font-weight: normal;}
     .contact-info ul{padding-left: 0;}
     .contact-info ul li{display: block; border-top: 1px solid #eaeaea; padding: 9px 0 9px 25px; font-family: 'OpenSans'; font-size: 14px;}
     .gallery-block{width: 310px; background: white;	 height: 185px; overflow: hidden; margin-top: 10px; margin-bottom: 15px; position: relative; cursor: pointer;

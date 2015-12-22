@@ -244,7 +244,7 @@ top:49%;}
 .time-calendar{  font-family: 'RobotoSlab-Regular'; }
 .pop-up-time{height: 46px; overflow: hidden; background: white; }
 .pop-up-time-title{height: 40px; width: 88%; line-height: 40px; background: url(../img/arrow-bottom.png)no-repeat 90% center,#336d83; color: white; padding-left: 25px; 
-    border:1px solid #99b6c1; outline: 2px solid #336d83; cursor: pointer;  margin: 2px; font-family: 16px;}
+    border:1px solid #99b6c1; outline: 2px solid #336d83; cursor: pointer;  margin: 2px; font-size: 16px;}
     .calendar-years{display: block; margin: 15px 45px;}
     .calendar-month,.calendar-days{display: block; margin: 15px;}
     .time-calendar ul{padding-left: 0;}
