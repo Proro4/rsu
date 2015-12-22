@@ -49,6 +49,8 @@
 	.news-text{width: 100%; padding-left: 5px;}
 }
 @media screen and (max-width: 760px){
+
+	.text-page img,.content-photo,.img-events,.news-block img,.left-column>img{display: none;}
 	.copyright{ margin-top: 50px;}
 	.all-news-button-box{width: 100%;}
 form.search_block{margin-left: 0; margin-right: 0;}
