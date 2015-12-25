@@ -145,7 +145,7 @@ h1 {
 	position: relative;
 }
 
-.nav-container>.menu>li>a {
+.nav-container>.menu>li>a,.nav-container>.menu>li>span  {
 	text-decoration: none;
 	color: rgb(255,255,255);
 	font-family: 'RobotoSlab-Regular', serif;
@@ -155,7 +155,7 @@ h1 {
 	transition:.3s all;
 }
 
-.nav-container>.menu>li>a:hover {
+.nav-container>.menu>li>a:hover,.nav-container>.menu>li>span:hover {
 	color: rgb(255,218,68);
 	background: rgb(42,42,42);
 }
@@ -965,8 +965,25 @@ transition:.3s all;
         	  text-transform: uppercase;
         	  margin-bottom: 10px;
         }
+
+        .slide-text-block b a{
+        	width: 100%;
+        	font-size: 16px;
+        	  font-family: 'RobotoSlab-Regular';
+        	  font-weight: normal;
+        	  color:#ffda44;
+        	  display: block;
+        	  text-transform: uppercase;
+        	  margin-bottom: 10px;
+        	  text-decoration: none;
+
+        }
         .slide-text-block p{
         	width: 90%;
+        }
+        .slide-text-block p a{
+        	color: white;
+        	text-decoration: none;
         }
          .slider .slide-text .slide-all-text .slide-text-block {
           font-size: 16px;
@@ -1010,6 +1027,7 @@ transition:.3s all;
    	margin-top: 15px;
    	display: block;
    }
+  .invest-project ul li span,
   .invest-project ul li a {
   	color: white;
     display: block;
@@ -1021,6 +1039,7 @@ transition:.3s all;
     padding-left: 75px;
     -webkit-transition: 0.4s all;
             transition: 0.4s all; }
+			  .invest-project ul li span:hover,
               .invest-project ul li a:hover{
               	color:#ffd84f;
               	background: rgba(20,20,20,.6);
