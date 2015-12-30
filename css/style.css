@@ -1099,7 +1099,7 @@ display: none;
 	display: block;
 }
 .nav-container .menu-pop-up li a{width: 100%; display: block; text-align: center; padding-left: 0; padding-right: 0; color: white;
-	text-decoration: none; padding: 10px 0;}
+	text-decoration: none; padding: 10px 0;     border-bottom: 1px solid white;}
 .nav-container .menu-pop-up li a:hover{ padding-left: 0; padding-right: 0;}
 .foot-bott{display: none;}
 .lang {
