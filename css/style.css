@@ -81,7 +81,7 @@ blockquote, q {
 }
 
 h1 {
-	font-family: 'RobotoSlab-Regular', sans-serif;
+	font-family: 'RobotoSlab-Regular', sans-serif, Arial;
 	font-size: 30px;
 	margin: 0;
 	float: left;
@@ -115,7 +115,7 @@ h1 {
 	float: left;
 	padding: 0 0 0 20px;
 	font-size: 16px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif, Arial;
 	border-style: none;
 	outline: none;
 }
@@ -148,7 +148,7 @@ h1 {
 .nav-container>.menu>li>a,.nav-container>.menu>li>span  {
 	text-decoration: none;
 	color: rgb(255,255,255);
-	font-family: 'RobotoSlab-Regular', serif;
+	font-family: 'RobotoSlab-Regular', serif, Arial;
 	font-size: 16px;
 	text-align: center;
 	padding:10px 35px 8px 35px;
@@ -241,7 +241,7 @@ h1 {
 	text-decoration: none;
 	width: 100%;
 	background: rgb(104,7,27);
-	font-family: 'RobotoSlab-Regular', serif;
+	font-family: 'RobotoSlab-Regular', serif, Arial;
 	font-size: 17px;
 	padding:7px 0 7px 0;
 	margin: 0 0 32px 0;
@@ -308,7 +308,7 @@ h1 {
 	top: -13px;
 	left: 292px;
 	color: rgb(255,255,255);
-	font-family: 'RobotoSlab-Regular', serif;
+	font-family: 'RobotoSlab-Regular', serif, Arial;
 	font-size: 13px;
 	text-align: center;
 }
@@ -333,14 +333,14 @@ h1 {
 	margin: 28px 0 18px 0;
 	cursor: pointer;
 	padding:0 20px 0 0px;
-	font-family: 'RobotoSlab-Regular', serif;
+	font-family: 'RobotoSlab-Regular', serif, Arial;
 
 }
 
 
 .p-content {
 	display: block;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif, Arial;
 	font-size: 14px;
 	line-height: 18px;
 	color: rgb(0,0,0);
@@ -393,7 +393,7 @@ transition:.3s all;
 	text-decoration: none;
 	width: 710px;
 	background: rgb(50,59,67);
-	font-family: 'RobotoSlab-Regular', serif;
+	font-family: 'RobotoSlab-Regular', serif, Arial;
 	font-size: 17px;
 	padding:7px 0;
 	margin: 0 0 15px 0;
@@ -444,7 +444,7 @@ transition:.3s all;
 	text-decoration: none;
 	width: 270px;
 	background: #336d83;
-	font-family: 'RobotoSlab-Regular', serif;
+	font-family: 'RobotoSlab-Regular', serif, Arial;
 	font-size: 17px;
 	padding:7px 0;
 	margin: 0 0 20px 0;
@@ -544,7 +544,7 @@ transition:.3s all;
 
 .p-events-content {
 	display: block;
-	font-family: 'Open Sans',serif;
+	font-family: 'Open Sans',serif, Arial;
 	color: rgb(0,0,0);
 	font-size: 12px;
 	float: left;
@@ -572,7 +572,7 @@ transition:.3s all;
 	position: relative;
 	display: block;
 	width: 100%;
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Roboto Slab', serif, Arial;
 	font-size: 16px;
 	background: rgb(50,59,67);
 	text-decoration: none;
@@ -604,7 +604,7 @@ transition:.3s all;
 	display: block;
 	padding:14px 25px;
 	text-decoration: none;
-	font-family: 'Open Sans', serif;
+	font-family: 'Open Sans', serif, Arial;
 	font-size: 14px;
 	color: rgb(51,109,131);
 	background: url(../img/arrow-list.png) no-repeat 13px 15px;
@@ -666,7 +666,7 @@ transition:.3s all;
 	text-decoration: none;
 	width: 100%;
 	background: rgb(50,59,67);
-	font-family: 'RobotoSlab-Regular', serif;
+	font-family: 'RobotoSlab-Regular', serif, Arial;
 	font-size: 17px;
 	padding:7px 0;
 	margin: 0 0 22px 0;
@@ -726,7 +726,7 @@ transition:.3s all;
 
 .p-last-docs {
 	    color: rgb(255,255,255);
-    font-family: 'RobotoSlab-Regular', serif;
+    font-family: 'RobotoSlab-Regular', serif, Arial;
     font-size: 14px;
     text-align: center;
     line-height: 25px;
@@ -735,7 +735,7 @@ transition:.3s all;
 
 .p-docs {
 	text-decoration: none;
-	font-family: 'Open Sans', serif;
+	font-family: 'Open Sans', serif, Arial;
 	color: rgb(51,109,131);
 	font-size: 14px;
 	margin: 0;
@@ -762,7 +762,7 @@ transition:.3s all;
 	text-decoration: none;
 	width: 100%;
 	background: rgb(50,59,67);
-	font-family: 'RobotoSlab-Regular', serif;
+	font-family: 'RobotoSlab-Regular', serif, Arial;
 	font-size: 17px;
 	padding:7px 0;
 	margin: 0 0 22px 0;
@@ -844,7 +844,7 @@ transition:.3s all;
 .info-box a
  {
 	display: block;
-	font-family: 'RobotoSlab-Regular', serif;
+	font-family: 'RobotoSlab-Regular', serif, Arial;
 	font-size: 18px;
 	text-transform: uppercase;
 	color: rgb(245,208,78);
@@ -853,7 +853,7 @@ transition:.3s all;
 }
 
 .p-adress {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif, Arial;
 	line-height: 24px;
 	font-size: 14px;
 	color: rgb(255,255,255);
@@ -861,7 +861,7 @@ transition:.3s all;
 }
 
 .copyright {
-	font-family: 'Open Sans', serif;
+	font-family: 'Open Sans', serif, Arial;
 	font-size: 13px;
 	color: rgb(198,198,198);
 	margin:93px 0px 20px 0;
@@ -895,7 +895,7 @@ transition:.3s all;
 	text-transform: none;
 	margin: 0 0 10px 0;
 	padding: 0;
-	font-family: 'Open Sans', serif;
+	font-family: 'Open Sans', serif, Arial;
 	font-size: 14px;
 	color: rgb(230,233,237);
 }
@@ -903,7 +903,7 @@ transition:.3s all;
 .developer {
 	display: inline-block;
 	float: right;
-	font-family: 'Open Sans', serif;
+	font-family: 'Open Sans', serif, Arial;
 	font-size: 13px;
 	color: rgb(198,198,198);
 	margin:23px 119px 0 0;
@@ -959,7 +959,7 @@ transition:.3s all;
         .slide-text-block b{
         	width: 80%;
         	font-size: 16px;
-        	  font-family: 'RobotoSlab-Regular';
+        	  font-family: 'RobotoSlab-Regular', Arial;
         	  font-weight: normal;
         	  color:#ffda44;
         	  display: block;
@@ -970,7 +970,7 @@ transition:.3s all;
         .slide-text-block b a{
         	width: 100%;
         	font-size: 16px;
-        	  font-family: 'RobotoSlab-Regular';
+        	  font-family: 'RobotoSlab-Regular', Arial;
         	  font-weight: normal;
         	  color:#ffda44;
         	  display: block;
@@ -1035,7 +1035,7 @@ transition:.3s all;
     padding: 15px 0px;
     text-decoration: none;
     font-size: 16px; 
-    font-family: 'RobotoSlab-Regular';
+    font-family: 'RobotoSlab-Regular', Arial;
     width: 115px;
     padding-left: 75px;
     -webkit-transition: 0.4s all;
@@ -1081,7 +1081,7 @@ transition:.3s all;
 	background: url(../img/other/menu-popup.png) no-repeat left center;
 	color: white;
 	text-align: left;
-	  font-family: 'RobotoSlab-Regular';
+	  font-family: 'RobotoSlab-Regular', Arial;
 }
 .menu-pop-up{
 display: none;
@@ -1162,7 +1162,7 @@ display: none;
             left: 0;
             color: black;
             padding-bottom: 0;
-            font-family: Open Sans, Tahoma, sans-serif;;
+            font-family: Open Sans, Tahoma, sans-serif, Arial;
             font-size: 14px;
             padding: 7px;             line-height: 15px;}
 
@@ -1243,7 +1243,7 @@ display: none;
       bottom: 5px;
       color: #336d83;
       font-size: 14px; 
-       font-family: 'RobotoSlab-Regular';
+       font-family: 'RobotoSlab-Regular', Arial;
     line-height: 25px;
     }
     .breadcrumb a{
@@ -1259,7 +1259,7 @@ display: none;
     .title-page{
       text-transform: uppercase;
       font-size: 22px;
-       font-family: 'RobotoSlab-Regular';
+       font-family: 'RobotoSlab-Regular', Arial;
     color: white;
     text-align: center;
     padding: 8px 0;
@@ -1286,7 +1286,7 @@ display: none;
     	background: #fad44f;
     }
     .text-page b{
-       font-family: 'RobotoSlab-Regular';
+       font-family: 'RobotoSlab-Regular', Arial;
 		font-size: 16px;
 		color: #68071b;
 		line-height: 1.3;
@@ -1295,7 +1295,7 @@ display: none;
 		padding-bottom:5px; 
     }
     	.text-page strong{
-       font-family: 'RobotoSlab-Regular';
+       font-family: 'RobotoSlab-Regular', Arial;
 		font-size: 16px;
 		color: #68071b;
 		line-height: 1.3;
@@ -1308,7 +1308,7 @@ display: none;
     	}
      .text-block{
       font-size: 14px;
-       font-family: 'RobotoSlab-Regular';
+       font-family: 'RobotoSlab-Regular', Arial;
       line-height: 1.2;
       padding-bottom: 25px;
     }
@@ -1329,7 +1329,7 @@ display: none;
 	.text-page  i{
 		font-style: normal;
 		width: 80%;
-		float: left; clear: both; font-size: 13px; font-family: 'OpenSans';
+		float: left; clear: both; font-size: 13px; font-family: 'OpenSans', Arial;
 		margin: 0;
 		padding: 0;
 	}
@@ -1344,7 +1344,7 @@ display: none;
     	border-top:1px solid #eaeaea;
       font-size: 18px;
       font-weight: bold;
-       font-family: 'RobotoSlab-Regular';
+       font-family: 'RobotoSlab-Regular', Arial;
       color: #333c44;
       text-transform:uppercase;
       margin-bottom: 15px;
@@ -1358,14 +1358,14 @@ display: none;
 	.c100{width: 100%; text-align: center;}
 	.text-page .text-block-img.c100 p{width: 100%;}
 	.print-link{width: 100%; text-align: center; font-size: 14px; padding: 10px 0; border-top:1px solid #eaeaea; }
-	.print-link a{ color: #00395f; text-decoration: none; font-family: 'Roboto Slab'; background: url(../img/print-icon.png)no-repeat left; padding-left: 30px;}
+	.print-link a{ color: #00395f; text-decoration: none; font-family: 'Roboto Slab', Arial; background: url(../img/print-icon.png)no-repeat left; padding-left: 30px;}
 	.cos-link{ width: 100%; background: white;display:inline-block;}
 	.cos-link ul{
 		padding: 0px 8px;
 	}
 	.cos-link li:first-child{margin-left: 0;}
 	.cos-link li{ margin-left:9%; display: inline-block; height: 30px; width: 175px; text-align: right;}
-	.cos-link li a{text-decoration: none; color: white; text-transform: uppercase; font-family: 'RobotoSlab-Regular'; font-size: 14px; line-height: 30px; margin-right: 2px; padding: 3px 5px 4px 2px;}
+	.cos-link li a{text-decoration: none; color: white; text-transform: uppercase; font-family: 'RobotoSlab-Regular', Arial; font-size: 14px; line-height: 30px; margin-right: 2px; padding: 3px 5px 4px 2px;}
 	.twit{background: url(../img/icon-social.png)no-repeat 0 -60px, #00b6ec;} .fb{background: url(../img/icon-social.png)no-repeat 0 0px, #425497;}
  	.vk{background: url(../img/icon-social.png)no-repeat 0 -90px, #536e8f;} .gplus{background: url(../img/icon-social.png)no-repeat 0 -30px, #de4241;}
 	.cos-link li a span{color: white; padding: 2px 5px 3px 5px; margin-right: 3px; transition:0.3s all;}
@@ -1380,7 +1380,7 @@ display: none;
     	border-top:1px solid #eaeaea;
       font-size: 18px;
       font-weight: bold;
-       font-family: 'RobotoSlab-Regular';
+       font-family: 'RobotoSlab-Regular', Arial;
       color: #333c44;
       text-transform:uppercase;
       margin-bottom: 15px;
@@ -1395,7 +1395,7 @@ display: none;
     }
 .text-page ul li{
 	 display: inline-block;	
-    	font-family: 'OpenSans';
+    	font-family: 'OpenSans', Arial;
       margin-top: 10px;
       padding-left: 25px;
       font-size: 14px;
@@ -1421,7 +1421,7 @@ display: none;
 
      }
      .right-menu ul a{
-       font-family: 'RobotoSlab-Regular';
+       font-family: 'RobotoSlab-Regular', Arial;
        font-size: 16px;
      	display: inline-block;
      	padding: 10px 0;
@@ -1436,7 +1436,7 @@ display: none;
 
      .document-page .print-link{display: inline-block; border:0; margin-top: 15px; width: auto; margin-left: 40%;}
      .down-but,.review-but{ color:white; border:1px solid white;display: inline-block; text-decoration: none; padding: 3px 5px; text-transform: uppercase;
-       font-family: 'RobotoSlab-Regular'; font-size: 14px; margin-left: 15px;}
+       font-family: 'RobotoSlab-Regular', Arial; font-size: 14px; margin-left: 15px;}
        .down-but:hover,.review-but:hover{opacity: .8;}
          .review-but{background: #343d44;outline: 1px solid #343d44;  }
     .down-but{background: #68071b;outline: 1px solid #68071b;}
@@ -1471,7 +1471,7 @@ display: none;
     .news-text{
     	float: left;width: 60%;
     	font-size: 14px; padding-left: 15px;
-    	font-family: 'OpenSans'; padding-bottom: 15px;
+    	font-family: 'OpenSans', Arial; padding-bottom: 15px;
     	line-height: 1.1;
     	letter-spacing: 0.1px;
     }
@@ -1506,23 +1506,23 @@ display: none;
 		top: 15px;
 		right: 15px;
 		font-style: normal;
-    font-family: sans-serif;
+    font-family: sans-serif, Arial;
     cursor: pointer;
     }
     .contacts{margin-bottom: 35px;}
     .contacts iframe{width: 60%; height: 315px;}
     .contact-info{display: inline-block;    width: 39%;vertical-align: top;}
-    .contact-info h2{margin-top: 10px; text-align:center; text-transform: uppercase; font-family: 'RobotoSlab-Regular'; font-size: 18px; color: #336d83; font-weight: normal;}
+    .contact-info h2{margin-top: 10px; text-align:center; text-transform: uppercase; font-family: 'RobotoSlab-Regular', Arial; font-size: 18px; color: #336d83; font-weight: normal;}
     .contact-info ul{padding-left: 0;}
-    .contact-info ul li{display: block; border-top: 1px solid #eaeaea; padding: 9px 0 9px 25px; font-family: 'OpenSans'; font-size: 14px;}
+    .contact-info ul li{display: block; border-top: 1px solid #eaeaea; padding: 9px 0 9px 25px; font-family: 'OpenSans', Arial; font-size: 14px;}
     .gallery-block{width: 310px; background: white;	 height: 185px; overflow: hidden; margin-top: 10px; margin-bottom: 15px; position: relative; cursor: pointer;
     	float: left; margin-left: 30px;}
     .gallery-block-line .gallery-block:first-child{margin-left: 5px;} 
     .gallery-block>img{height: 80%; width: 100%;}
     .gallery-info {position: absolute; height: 35px; width: 100%; bottom: 0; left: 0; background: white;z-index: 3;}
-    .gallery-date{background: url(../img/red-flag.png); height: 25px;width: 127px; position: absolute;top: 5px;left: 5px; color: white; font-family: 'OpenSans';
+    .gallery-date{background: url(../img/red-flag.png); height: 25px;width: 127px; position: absolute;top: 5px;left: 5px; color: white; font-family: 'OpenSans', Arial;
     text-align: center; line-height: 25px; }
-    .gallery-block p{position: absolute;bottom: -100px; z-index: 1; width: 100%; background: rgba(0,0,0,.5); color: white; font-family: 'OpenSans'; padding: 5px; } 
+    .gallery-block p{position: absolute;bottom: -100px; z-index: 1; width: 100%; background: rgba(0,0,0,.5); color: white; font-family: 'OpenSans', Arial; padding: 5px; } 
     .star{ position: absolute; right: 5px;bottom: 10px;}
     .rating {
     background: url(../img/star.png)no-repeat left center;
@@ -1543,7 +1543,7 @@ display: none;
 	z-index: 500;
 }
  .content{color:#777;font:12px/1.4 "helvetica neue",arial,sans-serif;width:900px; height: 500px; margin:20px auto; position: relative; padding-top: 00px;}
-  .content i{cursor:pointer; position: absolute; right: 3px; top: 0px; color: black; z-index: 2; font-style: normal; font-family: sans-serif;}
+  .content i{cursor:pointer; position: absolute; right: 3px; top: 0px; color: black; z-index: 2; font-style: normal; font-family: sans-serif, Arial;}
           .slide-galleria{display: block; top:-5000px; position: fixed; z-index: 501;}
             .content p{margin:0 0 20px}
             .contenta {color:#22BCB9;text-decoration:none;}
@@ -1571,19 +1571,19 @@ display: none;
     	color: #68071b;
     	text-transform: uppercase;
     	font-size: 22px;
-		font-family: 'RobotoSlab-Regular';
+		font-family: 'RobotoSlab-Regular', Arial;
 		margin-top: 10px;
 		padding: 25px 0;
 		border-bottom: 1px solid #eaeaea;
     }
 .error-page p{
-		font-family: 'OpenSans';
+		font-family: 'OpenSans', Arial;
 		font-size: 16px;
 		padding: 25px 0;
 }
 .error-page p b{
 	text-transform: uppercase;
-		font-family: 'RobotoSlab-Regular';
+		font-family: 'RobotoSlab-Regular', Arial;
 		font-size: 18px;
 		font-weight: normal;
 		line-height: 25px;
@@ -1605,4 +1605,22 @@ display: none;
     display: block;
     width: 100%;
     padding-left: 5px;
+}
+.title-page h1 {
+    position: relative;
+    display: block;
+    float: none;
+    margin-top: 0;
+    font-weight: normal;
+    font-size: 22px;
+}
+.left-column a {
+    color: #833545;
+    text-decoration: none;
+}
+.left-column a:hover {
+	text-decoration: underline;
+}
+.lightbox h4{
+	text-align: center;
 }

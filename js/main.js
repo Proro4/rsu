@@ -113,20 +113,62 @@ $('.document-page .calendar-years select').on('change',function(){
                      $(this).parent().find('.5').removeClass('ratings');
     })
          $('.gallery-page .1, .carusel-item .1').click(function(){
-             
-             alert('1'); 
+            	 $('.lightbox').css({'opacity':'1'});
+             $('.lightbox').css('display','block');
+             setTimeout(function () {
+            	 $('.lightbox').animate({'opacity':'0'},500);
+	             setTimeout(function () {
+	            	 $('.lightbox').css({'display':'none'});
+				}, 2000);
+			}, 1000);
          });
-           $('.gallery-page .2, .carusel-item .2').click(function(){            
-             alert('2'); 
+           $('.gallery-page .2, .carusel-item .2').click(function(){
+            	 $('.lightbox').css({'opacity':'1'});
+             $('.lightbox').css('display','block');   
+             setTimeout(function () {
+            	 $('.lightbox').animate({'opacity':'0'},500);
+	             setTimeout(function () {
+	            	 $('.lightbox').css({'display':'none'});
+				}, 500);
+
+			}, 1000);
+             
          })
             $('.gallery-page .3, .carusel-item .3').click(function(){
-             alert('3'); 
+            	 $('.lightbox').css({'opacity':'1'});
+             $('.lightbox').css('display','block');
+             setTimeout(function () {
+            	 $('.lightbox').animate({'opacity':'0'},500);
+	             setTimeout(function () {
+	            	 $('.lightbox').css({'display':'none'});
+				}, 500);
+
+			}, 1000);
+            
          }) 
             $('.gallery-page .4, .carusel-item .4').click(function(){
-             alert('4'); 
+            	 $('.lightbox').css({'opacity':'1'});
+             $('.lightbox').css('display','block');
+             setTimeout(function () {
+            	 $('.lightbox').animate({'opacity':'0'},500);
+	             setTimeout(function () {
+	            	 $('.lightbox').css({'display':'none'});
+				}, 500);
+
+			}, 1000);
+             
          })
             $('.gallery-page .5, .carusel-item .5').click(function(){
-             alert('5'); 
+            	 $('.lightbox').css({'opacity':'1'});
+             $('.lightbox').css('display','block');
+             setTimeout(function () {
+            	 $('.lightbox').animate({'opacity':'0'},500);
+	             setTimeout(function () {
+	            	 $('.lightbox').css({'display':'none'});
+				}, 500);
+
+			}, 1000);
+            	 
          })
 	
 
