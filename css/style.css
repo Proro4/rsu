@@ -1614,11 +1614,11 @@ display: none;
     font-weight: normal;
     font-size: 22px;
 }
-.left-column a {
+.left-column p a {
     color: #833545;
     text-decoration: none;
 }
-.left-column a:hover {
+.left-column p a:hover {
 	text-decoration: underline;
 }
 .lightbox h4{
