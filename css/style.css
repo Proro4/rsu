@@ -1451,6 +1451,7 @@ display: none;
      .pagination li a:hover{background: #99b6c1; color:#336d83;}
      .print-link a:hover{text-decoration: underline;}
      .news-block{ padding: 10px 0; position: relative; clear: both;}
+     .news-block>a{float: left;}
      .news-block>img{float: left;}
      .pagination li span{
  display: inline-block;
