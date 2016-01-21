@@ -24,6 +24,7 @@
 
 }
 @media screen and (max-width: 1018px){
+	.block-cat{width: 235px; margin-left: 12px; height: 130px;}
 	.pop-up-time-title{width: 96%;}
 	.download-documents-box,.left-column{width: 100%;}
  	a.button-popular,.gallery,.last-docs-box{width: 100%;}
@@ -49,6 +50,9 @@
 	.news-text{width: 100%; padding-left: 5px;}
 }
 @media screen and (max-width: 760px){
+	.block-cat{width: 30%; margin-left: 3%; height: 100px;}
+	.block-cat:first-child{margin-left:1.5%;}
+	.block-cat p{font-size: 12px; height: 35px;}
 .nav-container .menu-pop-up li a{
 	text-transform: uppercase;
 }
@@ -89,6 +93,9 @@ form.search_block{margin-left: 0; margin-right: 0;}
 	.gallery-block-line .gallery-block:nth-child(3n){display: none;}
 }
 @media screen and (max-width: 660px){
+	.block-cat{width: 60%; margin-left: 20%; height: 200px;}
+	.block-cat:first-child{margin-left: 20%;}
+	.block-cat p{font-size: 12px; height: 35px;}
 	.p-events-content{float: right; width: 89%; padding-right: 40px;}
 .img-events img{
 	margin: 0 auto;
@@ -109,6 +116,9 @@ form.search_block{margin-left: 0; margin-right: 0;}
 	.calendar .btn-next{right: 150px;}
 }
 @media screen and (max-width: 550px){
+	.block-cat{width: 80%; margin-left: 10%; height: 200px;}
+	.block-cat:first-child{margin-left: 10%;}
+	.block-cat p{font-size: 12px; height: 35px;}
 	.text-page span img{width: 100%;}
 	.lang{display: none;}
 	.header{ height: 248px;}
@@ -144,6 +154,8 @@ form.search_block{margin-left: 0; margin-right: 0;}
 	.calendar .btn-next{right: 90px;}
 }
 @media screen and (max-width: 450px){
+	.block-cat{width: 90%; margin-left: 5%; height: 160px;}
+	.block-cat:first-child{margin-left: 5%;}
 	.logo{ width: 25%;}
 	.foot-bott{display: block;}
 	.img-events img{margin-left: 2%;}
