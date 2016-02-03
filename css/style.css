@@ -910,6 +910,9 @@ transition:.3s all;
 	text-decoration: none;
 
 }
+.developer:hover{
+	text-decoration: underline;
+}
 
 
 .containers{
