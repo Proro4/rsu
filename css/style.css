@@ -937,6 +937,7 @@ transition:.3s all;
       left: 0;
       top: 0; }
        .slider .slider-container .item {
+       	text-align: center;
         position: relative;
         height: 100%;
         float: left;
@@ -1521,8 +1522,8 @@ display: none;
     .contact-info ul{padding-left: 0;}
     .contact-info ul li{display: block; border-top: 1px solid #eaeaea; padding: 9px 0 9px 25px; font-family: 'OpenSans', Arial; font-size: 14px;}
     .gallery-block{width: 310px; background: white;	 height: 185px; overflow: hidden; margin-top: 10px; margin-bottom: 15px; position: relative; cursor: pointer;
-    	float: left; margin-left: 30px;}
-    .gallery-block-line .gallery-block:first-child{margin-left: 5px;} 
+    	float: left; margin-left: 18px;}
+    /*.gallery-block-line .gallery-block:first-child{margin-left: 5px;} */
     .gallery-block>img{height: 80%; width: 100%;}
     .gallery-info {position: absolute; height: 35px; width: 100%; bottom: 0; left: 0; background: white;z-index: 1;}
     .gallery-date{background: url(../img/red-flag.png); height: 25px;width: 127px; position: absolute;top: 5px;left: 5px; color: white; font-family: 'OpenSans', Arial;
@@ -1574,6 +1575,7 @@ display: none;
     .left-column>img{float:left;}
     .left-column>p{clear: both;
     	padding: 10px;
+    	margin: 0;
     	line-height: 1.4;}
 
     .error-page{
