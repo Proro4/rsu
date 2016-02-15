@@ -247,6 +247,7 @@ top:49%;}
     border:1px solid #99b6c1; outline: 2px solid #336d83; cursor: pointer;  margin: 2px; font-size: 16px;}
     .calendar-years{display: block; margin: 15px 45px;}
     .calendar-month,.calendar-days{display: block; margin: 15px;}
+    .time-calendar{margin-bottom: 22px;}
     .time-calendar ul{padding-left: 0;}
     .time-calendar ul li{display: inline-block;
     padding: 3px;

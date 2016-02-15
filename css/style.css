@@ -235,7 +235,7 @@ h1 {
 	background: #eaeaea;
 }
 
-.left-column .download-button{ margin-bottom: 20px; margin-top: 0px;}
+.left-column .download-button{ margin:0 0 0 0;}
 .button-news {
 	display: block;
 	text-decoration: none;
@@ -1409,6 +1409,7 @@ display: none;
     }
     .right-menu{
     	margin-top: 10px;
+    	margin-bottom: 22px;
     }
     .right-menu ul{
     	text-transform: uppercase;

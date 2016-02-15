@@ -1,11 +1,11 @@
 $(document).ready(function(){
   var date = new Date(), 
 year = date.getFullYear();
-var yearLast = year+1;
-var yearLength =  year - 2000
+var yearLast = year;
+var yearLength =year - 2015 ;
 for(var i = 0; i<=yearLength; i++){
-  yearLast = yearLast-1;
   $('.calendar-years ul').append('<li value="'+yearLast+'">'+yearLast+'</li>')
+  yearLast = yearLast-1;
 } 
 })
 
