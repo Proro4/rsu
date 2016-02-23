@@ -438,29 +438,31 @@ $('.lang .lang-but').on('click',function(){
 	// 	$('.slider').css('height','514px');
 	// }//CARUSEL
 
-	var caruselLength = $('.slider-2 .carusel-block').length;
-	caruselLength = caruselLength+10
-	$('.slider-2 .all-carusel').css('width',caruselLength+'00%');
-	$('.slider-2 .carusel-block').css('width',(100/caruselLength)+'%');
 	var carId = 0;
 	$('.slider-2 .carusel-arrow-next').click(function(){
+	var caruselLength = $('.slider-2 .carusel-block').length;
+	console.log(caruselLength)
+	$('.slider-2 .all-carusel').css('width',caruselLength+'00%');
+	$('.slider-2 .carusel-block').css('width',(100/caruselLength)+'%');
 		carId += 1;
 			$('.slider-2 .all-carusel').animate({left:-carId+'00%'});
 
-		if(carId > caruselLength+1){
+		if(carId == caruselLength){
 			carId = 0;
 		$('.slider-2 .all-carusel').animate({left:-carId+'00%'},250);
 		}
+		console.log(carId);
 	})
 	$('.slider-2 .carusel-arrow-prev').click(function(){
 		carId -= 1;
 		$('.slider-2 .all-carusel').animate({left:-carId+'00%'});
 
-		if(carId < caruselLength+1){
-			carId = caruselLength+1;
+		if(carId < 0){
+			carId = caruselLength-1;
 		$('.slider-2 .all-carusel').animate({left:-carId+'00%'});
 
 		}
+		console.log(carId);
 	})
 
 	var caruselLength = $('.slider-3 .carusel-block').length;

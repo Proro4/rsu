@@ -79,7 +79,9 @@ blockquote, q {
 	margin:6px 0 0 40px;
 	width:15%;
 }
-
+.header h1{
+	width: 450px;
+}
 h1 {
 	font-family: 'RobotoSlab-Regular', sans-serif, Arial;
 	font-size: 30px;
@@ -96,7 +98,7 @@ h1 {
 	width: 220px;
 	height: 40px;
 	float: left;
-	    margin: 41px 0 0 200px;
+	    margin: 41px 0 0 20px;
 }
 
 .search_block input[type="submit"]{
@@ -1500,13 +1502,15 @@ display: none;
 
     .lightbox span{
 	position: relative;
-    	width: 50%;
+    	width: 70%;
     	min-height: 100px;
+    	max-height: 80%;
     	background: white;
 		display: block;
 		margin: 0 auto;
-		margin-top: 15%;
+		margin-top: 10%;
 		padding: 20px;
+		overflow: auto;
     }
     .lightbox span i{
     	position: absolute;
