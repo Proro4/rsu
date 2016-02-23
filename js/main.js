@@ -441,7 +441,6 @@ $('.lang .lang-but').on('click',function(){
 	var carId = 0;
 	$('.slider-2 .carusel-arrow-next').click(function(){
 	var caruselLength = $('.slider-2 .carusel-block').length;
-	console.log(caruselLength)
 	$('.slider-2 .all-carusel').css('width',caruselLength+'00%');
 	$('.slider-2 .carusel-block').css('width',(100/caruselLength)+'%');
 		carId += 1;
@@ -451,7 +450,6 @@ $('.lang .lang-but').on('click',function(){
 			carId = 0;
 		$('.slider-2 .all-carusel').animate({left:-carId+'00%'},250);
 		}
-		console.log(carId);
 	})
 	$('.slider-2 .carusel-arrow-prev').click(function(){
 		carId -= 1;
@@ -462,7 +460,6 @@ $('.lang .lang-but').on('click',function(){
 		$('.slider-2 .all-carusel').animate({left:-carId+'00%'});
 
 		}
-		console.log(carId);
 	})
 
 	var caruselLength = $('.slider-3 .carusel-block').length;
