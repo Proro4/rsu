@@ -1614,11 +1614,14 @@ display: none;
 }
 .text-page table{
 	right: 0;
+	width: 99%;
 }
 .text-page table tr {
     vertical-align: top;
     display: block;
     border: 1px solid;
+    margin: -1px 5px;
+    padding: 10px 5px;
 }
 .text-page table tr td {
     /* text-align: center; */
