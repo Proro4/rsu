@@ -23,7 +23,11 @@ var calendar = {
         /**
          * Get current day and set as '.current-day'
          */
-        $('tbody td[date-day="' + d.getDate() + '"]').addClass('current-day');
+         setTimeout(function(){
+
+          $('tbody td[date-day="' + d.getDate() + '"]').addClass('current-day');
+
+         },2500);
 
         /**
          * Add class '.active' on calendar date

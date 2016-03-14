@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
   var date = new Date(), 
 year = date.getFullYear();
 var yearLast = year;
@@ -11,10 +12,6 @@ for(var i = 0; i<=yearLength; i++){
 
 var calendar = {
 
-
-
-
-
   init: function() {
 
     var mon = 'Пд';
@@ -25,7 +22,8 @@ var calendar = {
     var sat = 'Сб';
     var sund = 'Нд';
 
-    /**
+
+        /**
      * Get current date
      */
     var d = new Date();
@@ -49,6 +47,10 @@ var calendar = {
       printDateNumber(monthNumber, mon, tue, wed, thur, fri, sat, sund);
     }
 
+      var date = new Date(); 
+      var Cmonth =  date.getUTCMonth();
+
+    var bb = Cmonth;
     $('.btn-next').on('click', function(e) {
       var monthNumber = $('.month').attr('data-month');
       if (monthNumber > 11) {
@@ -59,6 +61,91 @@ var calendar = {
       } else {
         setMonth(parseInt(monthNumber) + 1, mon, tue, wed, thur, fri, sat, sund);
       };
+       $('.next-month').remove(); 
+       var DayForWeak = $('.calentdar-days tr:first td').length;
+       var dFWeak = 7 - DayForWeak;
+
+       $('.calentdar-days td').each(function(){
+        var calDayTd = $(this);
+        var lCalDay = +calDayTd.html() + dFWeak;
+        calDayTd.html(lCalDay);
+        calDayTd.attr('date-day', lCalDay);
+      });
+       for(var i = 1; i<=dFWeak; i++){
+        $('.calentdar-days tr:first').prepend('<td date-month="1" date-day="1" date-year="1">1</td>');
+       }
+       $('.calentdar-days td:last').remove();
+       bb++;
+
+
+
+
+
+
+      function getWeekDay(date) {
+        var daySunday = [sund, mon, tue, wed, thur, fri, sat];
+        return daySunday[date.getDay()];
+      }
+      var date = new Date(); 
+      var CYear = date.getFullYear();
+      var Cmonth =  date.getUTCMonth();
+      var firstDate = new Date(CYear, bb, 1 )
+      var fDate = getWeekDay(firstDate);
+      var minusDay = 0;
+      if(fDate == sund){minusDay = 6;}
+      else if(fDate == mon){ minusDay = 0;}
+      else if(fDate == tue){ minusDay = 1;}
+      else if(fDate == wed){ minusDay = 2;}
+      else if(fDate == thur){minusDay = 3;}
+      else if(fDate == fri){ minusDay = 4;}
+      else if(fDate == sat){ minusDay = 5;}
+      $('.calentdar-days td').each(function(){
+        var calDayTd = $(this);
+        var lCalDay = calDayTd.html() -  minusDay;
+        calDayTd.html(lCalDay);
+        calDayTd.attr('date-day', lCalDay);
+      });
+      var b = 0;
+      var lastMonthDay =  $('.calentdar-days td:last').html();
+      for(var i = 1; i<= minusDay; i++){
+        b++;
+        var lMDay = +lastMonthDay+b;
+        $('.calentdar-days tr:last').append('<td date-month="' + monthNumber + '" date-day="' + lastMonthDay + '" date-year="' + CYear + '">' + lMDay + '</td>');
+      }
+        var colDay = $('.calentdar-days tr:last td').length;
+        var remainsDay = 7 - colDay;
+      var d = 0;
+      for(var i = 1; i<= remainsDay; i++){
+        d++;
+        if(monthNumber != 12){
+          var nextMonthNumber = monthNumber +1;
+          nextCYear = CYear;
+        }
+        else{
+          var nextMonthNumber = 1;
+          var nextCYear = CYear + 1;
+        }
+        $('.calentdar-days tr:last').append('<td class="next-month" date-month="' + nextMonthNumber + '" date-day="' +  d + '" date-year="' + nextCYear + '">' + d + '</td>');
+      }
+      var lestMonth = new Date(CYear,bb,0).getDate();
+      console.log(lestMonth)
+      $('.calentdar-days td').each(function(){
+        if($(this).html() <= 0 ){
+          for(var i =1; i <= minusDay; i++){
+
+          $(this).html(lestMonth )
+                 .attr('date-day',lestMonth)
+                 .addClass('next-month');
+                 lestMonth--;
+          }
+        }
+      $('.calentdar-days tr td.next-month').css('color','#cecece'); 
+      })
+
+
+
+       
+      
     });
 
     $('.btn-prev').on('click', function(e) {
@@ -71,6 +158,82 @@ var calendar = {
       } else {
         setMonth(parseInt(monthNumber) - 1, mon, tue, wed, thur, fri, sat, sund);
       };
+       $('.next-month').remove(); 
+       var DayForWeak = $('.calentdar-days tr:first td').length;
+       var dFWeak = 7 - DayForWeak;
+
+       $('.calentdar-days td').each(function(){
+        var calDayTd = $(this);
+        var lCalDay = +calDayTd.html() + dFWeak;
+        calDayTd.html(lCalDay);
+        calDayTd.attr('date-day', lCalDay);
+      });
+       for(var i = 1; i<=dFWeak; i++){
+        $('.calentdar-days tr:first').prepend('<td date-month="1" date-day="1" date-year="1">1</td>');
+       }
+       $('.calentdar-days td:last').remove();
+        bb--;
+    
+      function getWeekDay(date) {
+        var daySunday = [sund, mon, tue, wed, thur, fri, sat];
+        return daySunday[date.getDay()];
+      }
+      var date = new Date(); 
+      var CYear = date.getFullYear();
+      var Cmonth =  date.getUTCMonth();
+      var firstDate = new Date(CYear, bb, 1 )
+      var fDate = getWeekDay(firstDate);
+      var minusDay = 0;
+      if(fDate == sund){minusDay = 6;}
+      else if(fDate == mon){ minusDay = 0;}
+      else if(fDate == tue){ minusDay = 1;}
+      else if(fDate == wed){ minusDay = 2;}
+      else if(fDate == thur){minusDay = 3;}
+      else if(fDate == fri){ minusDay = 4;}
+      else if(fDate == sat){ minusDay = 5;}
+      $('.calentdar-days td').each(function(){
+        var calDayTd = $(this);
+        var lCalDay = calDayTd.html() -  minusDay;
+        calDayTd.html(lCalDay);
+        calDayTd.attr('date-day', lCalDay);
+      });
+      var b = 0;
+      var lastMonthDay =  $('.calentdar-days td:last').html();
+      for(var i = 1; i<= minusDay; i++){
+        b++;
+        var lMDay = +lastMonthDay+b;
+        $('.calentdar-days tr:last').append('<td date-month="' + monthNumber + '" date-day="' + lastMonthDay + '" date-year="' + CYear + '">' + lMDay + '</td>');
+      }
+        var colDay = $('.calentdar-days tr:last td').length;
+        var remainsDay = 7 - colDay;
+      var d = 0;
+      for(var i = 1; i<= remainsDay; i++){
+        d++;
+        if(monthNumber != 12){
+          var nextMonthNumber = monthNumber +1;
+          nextCYear = CYear;
+        }
+        else{
+          var nextMonthNumber = 1;
+          var nextCYear = CYear + 1;
+        }
+        $('.calentdar-days tr:last').append('<td class="next-month" date-month="' + nextMonthNumber + '" date-day="' +  d + '" date-year="' + nextCYear + '">' + d + '</td>');
+      }
+      var lestMonth = new Date(CYear,bb,0).getDate();
+      console.log(lestMonth)
+      $('.calentdar-days td').each(function(){
+        if($(this).html() <= 0 ){
+          for(var i =1; i <= minusDay; i++){
+
+          $(this).html(lestMonth )
+                 .attr('date-day',lestMonth)
+                 .addClass('next-month');
+                 lestMonth--;
+          }
+        }
+      $('.calentdar-days tr td.next-month').css('color','#cecece'); 
+      })
+
     });
 
     $('.calendar-month ul li').on("click",function(){
@@ -162,19 +325,26 @@ var calendar = {
       function setDaysInOrder(mon, tue, wed, thur, fri, sat, sund) {
         var monthDay = getDaysInMonth(monthNumber - 1, yearNumber)[0].toString().substring(0, 3);
         if (monthDay === 'Mon') {
+      console.log(yearNumber);
           $('thead.event-days tr').append('<td>' + mon + '</td><td>' + tue + '</td><td>' + wed + '</td><td>' + thur + '</td><td>' + fri + '</td><td>' + sat + '</td><td>' + sund + '</td>');
         } else if (monthDay === 'Tue') {
-          $('thead.event-days tr').append('<td>' + tue + '</td><td>' + wed + '</td><td>' + thur + '</td><td>' + fri + '</td><td>' + sat + '</td><td>' + sund + '</td><td>' + mon + '</td>');
+      console.log(yearNumber);
+          $('thead.event-days tr').append('<td>' + mon + '</td><td>' + tue + '</td><td>' + wed + '</td><td>' + thur + '</td><td>' + fri + '</td><td>' + sat + '</td><td>' + sund + '</td>');
         } else if (monthDay === 'Wed') {
-          $('thead.event-days tr').append('<td>' + wed + '</td><td>' + thur + '</td><td>' + fri + '</td><td>' + sat + '</td><td>' + sund + '</td><td>' + mon + '</td><td>' + tue + '</td>');
+      console.log(yearNumber);
+          $('thead.event-days tr').append('<td>' + mon + '</td><td>' + tue + '</td><td>' + wed + '</td><td>' + thur + '</td><td>' + fri + '</td><td>' + sat + '</td><td>' + sund + '</td>');
         } else if (monthDay === 'Thu') {
-          $('thead.event-days tr').append('<td>' + thur + '</td><td>' + fri + '</td><td>' + sat + '</td><td>' + sund + '</td><td>' + mon + '</td><td>' + tue + '</td><td>' + wed + '</td>');
+      console.log(yearNumber);
+          $('thead.event-days tr').append('<td>' + mon + '</td><td>' + tue + '</td><td>' + wed + '</td><td>' + thur + '</td><td>' + fri + '</td><td>' + sat + '</td><td>' + sund + '</td>');
         } else if (monthDay === 'Fri') {
-          $('thead.event-days tr').append('<td>' + fri + '</td><td>' + sat + '</td><td>' + sund + '</td><td>' + mon + '</td><td>' + tue + '</td><td>' + wed + '</td><td>' + thur + '</td>');
+      console.log(yearNumber);
+          $('thead.event-days tr').append('<td>' + mon + '</td><td>' + tue + '</td><td>' + wed + '</td><td>' + thur + '</td><td>' + fri + '</td><td>' + sat + '</td><td>' + sund + '</td>');
         } else if (monthDay === 'Sat') {
-          $('thead.event-days tr').append('<td>' + sat + '</td><td>' + sund + '</td><td>' + mon + '</td><td>' + tue + '</td><td>' + wed + '</td><td>' + thur + '</td><td>' + fri + '</td>');
+      console.log(yearNumber);
+          $('thead.event-days tr').append('<td>' + mon + '</td><td>' + tue + '</td><td>' + wed + '</td><td>' + thur + '</td><td>' + fri + '</td><td>' + sat + '</td><td>' + sund + '</td>');
         } else if (monthDay === 'Sun') {
-          $('thead.event-days tr').append('<td>' + sund + '</td><td>' + mon + '</td><td>' + tue + '</td><td>' + wed + '</td><td>' + thur + '</td><td>' + fri + '</td><td>' + sat + '</td>');
+      console.log(yearNumber);
+          $('thead.event-days tr').append('<td>' + mon + '</td><td>' + tue + '</td><td>' + wed + '</td><td>' + thur + '</td><td>' + fri + '</td><td>' + sat + '</td><td>' + sund + '</td>');
         }
       };
       $(getDaysInMonth(monthNumber - 1, yearNumber)).each(function(index) {
@@ -192,6 +362,71 @@ var calendar = {
         }
         i++;
       });
+
+
+      function getWeekDay(date) {
+        var daySunday = [sund, mon, tue, wed, thur, fri, sat];
+        return daySunday[date.getDay()];
+      }
+      var date = new Date(); 
+      var CYear = date.getFullYear();
+      var Cmonth =  date.getUTCMonth();
+      var firstDate = new Date(CYear, Cmonth, 1 )
+      var fDate = getWeekDay(firstDate);
+      var minusDay = 0;
+      if(fDate == sund){minusDay = 6;}
+      else if(fDate == mon){ minusDay = 0;}
+      else if(fDate == tue){ minusDay = 1;}
+      else if(fDate == wed){ minusDay = 2;}
+      else if(fDate == thur){minusDay = 3;}
+      else if(fDate == fri){ minusDay = 4;}
+      else if(fDate == sat){ minusDay = 5;}
+      $('.calentdar-days td').each(function(){
+        var calDayTd = $(this);
+        var lCalDay = calDayTd.html() -  minusDay;
+        calDayTd.html(lCalDay);
+        calDayTd.attr('date-day', lCalDay);
+      });
+      var b = 0;
+      var lastMonthDay =  $('.calentdar-days td:last').html();
+      for(var i = 1; i<= minusDay; i++){
+        b++;
+        var lMDay = +lastMonthDay+b;
+        $('.calentdar-days tr:last').append('<td date-month="' + monthNumber + '" date-day="' + lastMonthDay + '" date-year="' + CYear + '">' + lMDay + '</td>');
+      }
+        var colDay = $('.calentdar-days tr:last td').length;
+        var remainsDay = 7 - colDay;
+      var d = 0;
+      for(var i = 1; i<= remainsDay; i++){
+        d++;
+        if(monthNumber != 12){
+          var nextMonthNumber = monthNumber +1;
+          nextCYear = CYear;
+        }
+        else{
+          var nextMonthNumber = 1;
+          var nextCYear = CYear + 1;
+        }
+        $('.calentdar-days tr:last').append('<td class="next-month" date-month="' + nextMonthNumber + '" date-day="' +  d + '" date-year="' + nextCYear + '">' + d + '</td>');
+      }
+      var lestMonth = new Date(CYear,Cmonth,0).getDate();
+      console.log(lestMonth)
+      $('.calentdar-days td').each(function(){
+        if($(this).html() <= 0 ){
+          for(var i =1; i <= minusDay; i++){
+
+          $(this).html(lestMonth )
+                 .attr('date-day',lestMonth)
+                 .addClass('next-month');
+                 lestMonth--;
+          }
+        }
+      $('.calentdar-days tr td.next-month').css('color','#cecece'); 
+      })
+
+
+
+
       var date = new Date();
       var month = date.getMonth() + 1;
       var thisyear = new Date().getFullYear();

@@ -13,9 +13,6 @@ $('.document-page .calendar-years select').on('change',function(){
 })
 
 
-
-
-
 	//gallery light-box	
 	$('.gallery-block img').on('click',function(){
 		$('.gallery-lightbox').css('top','0px');

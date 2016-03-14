@@ -1677,3 +1677,6 @@ display: none;
 .block-cat:first-child{
 	margin-left: 0;
 }
+.breadcrumbs a:hover{
+ color: #d4762d;
+}
