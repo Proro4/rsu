@@ -17,6 +17,7 @@
 
 }
 @media screen and (max-width: 1024px){
+	.header h1 {    width: 230px;}
 	.gallery-block-line .gallery-block:first-child{margin-left: 3px;}
 	.gallery-block{width: 235px; height: 143px; margin-left: 14px;}
 	.slide-text,.invest-project{bottom: 25px;}
@@ -93,6 +94,7 @@ form.search_block{margin-left: 0; margin-right: 0;}
 	.gallery-block-line .gallery-block:nth-child(3n){display: none;}
 }
 @media screen and (max-width: 660px){
+	.lang{float: left; margin-top: 10px;}
 	.block-cat{width: 60%; margin-left: 20%; height: 200px;}
 	.block-cat:first-child{margin-left: 20%;}
 	.block-cat p{font-size: 12px; height: 35px;}
@@ -138,6 +140,8 @@ form.search_block{margin-left: 0; margin-right: 0;}
     .calendar .event:after{bottom: 1px; right: 1px;}
 }
 @media screen and (max-width: 500px){
+	.left-column .a-news{    margin-top: 50px;}
+	.left-column .news-date {  top: 10px;}
 	.gallery-block-line .gallery-block:first-child{  margin-left: 10%;}
 	.gallery-block{width: 80%; height: 143px; margin-left: 10%;}
 	.download-button:before,.download-button:after,.button-events:before,.button-events:after,.button-news:after,.button-news:before{    width: 10%;}
@@ -167,6 +171,9 @@ form.search_block{margin-left: 0; margin-right: 0;}
 }
 
 @media screen and (max-width: 360px){
+	.header h1 {
+    width: 210px;
+}
 	.events-date{top:140px; display: none;}
 	.calendar h2:before,.calendar h2:after{width: 30px;}
 	.calendar .btn-prev{left: 40px;}
