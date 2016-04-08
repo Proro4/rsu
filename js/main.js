@@ -1,9 +1,8 @@
 $(document).ready(function(){
 // 
-$('.carusel-item.popular a').each(function(){
+$('.slider-2 .carusel-item a').each(function(){
 	var textPol = $(this).html();
 	var beginTextPol = textPol.substring(0, 150);
-	console.log(beginTextPol);
 	$(this).html(beginTextPol+'...');
 })
 
