@@ -6,7 +6,7 @@
   font-family: 'RobotoSlab-Regular';
   src: url(../fonts/robotoslab/RobotoSlab-Regular.ttf); }
   @font-face {
-  font-family: 'Open Sans';
+  font-family: 'OpenSans';
   src: url(../fonts/OpenSans.ttf); }
 
 body {
@@ -82,6 +82,9 @@ blockquote, q {
 .header h1{
 	width: 450px;
 }
+.header h1 span{
+	font-weight: normal;
+}
 h1 {
 	font-family: 'RobotoSlab-Regular', sans-serif, Arial;
 	font-size: 30px;
@@ -117,7 +120,7 @@ h1 {
 	float: left;
 	padding: 0 0 0 20px;
 	font-size: 16px;
-	font-family: 'Open Sans', sans-serif, Arial;
+	font-family: 'OpenSans', sans-serif, Arial;
 	border-style: none;
 	outline: none;
 }
@@ -342,7 +345,7 @@ h1 {
 
 .p-content {
 	display: block;
-	font-family: 'Open Sans', sans-serif, Arial;
+	font-family: 'OpenSans', sans-serif, Arial;
 	font-size: 14px;
 	line-height: 18px;
 	color: rgb(0,0,0);
@@ -378,6 +381,7 @@ margin:0 auto;
 text-transform: uppercase;
 color:rgb(255,255,255);
 transition:.3s all;
+margin-bottom: 15px;
 }
 .blue-button:hover{
     outline: 2px solid rgba(144,183,198,1);
@@ -546,7 +550,7 @@ transition:.3s all;
 
 .p-events-content {
 	display: block;
-	font-family: 'Open Sans',serif, Arial;
+	font-family: 'OpenSans',serif, Arial;
 	color: rgb(0,0,0);
 	font-size: 12px;
 	float: left;
@@ -606,7 +610,7 @@ transition:.3s all;
 	display: block;
 	padding:14px 25px;
 	text-decoration: none;
-	font-family: 'Open Sans', serif, Arial;
+	font-family: 'OpenSans', serif, Arial;
 	font-size: 14px;
 	color: rgb(51,109,131);
 	background: url(../img/arrow-list.png) no-repeat 13px 15px;
@@ -737,7 +741,7 @@ transition:.3s all;
 
 .p-docs {
 	text-decoration: none;
-	font-family: 'Open Sans', serif, Arial;
+	font-family: 'OpenSans', serif, Arial;
 	color: rgb(51,109,131);
 	font-size: 14px;
 	margin: 0;
@@ -855,7 +859,7 @@ transition:.3s all;
 }
 
 .p-adress {
-	font-family: 'Open Sans', sans-serif, Arial;
+	font-family: 'OpenSans', sans-serif, Arial;
 	line-height: 24px;
 	font-size: 14px;
 	color: rgb(255,255,255);
@@ -863,7 +867,7 @@ transition:.3s all;
 }
 
 .copyright {
-	font-family: 'Open Sans', serif, Arial;
+	font-family: 'OpenSans', serif, Arial;
 	font-size: 13px;
 	color: rgb(198,198,198);
 	margin:93px 0px 20px 0;
@@ -897,7 +901,7 @@ transition:.3s all;
 	text-transform: none;
 	margin: 0 0 10px 0;
 	padding: 0;
-	font-family: 'Open Sans', serif, Arial;
+	font-family: 'OpenSans', serif, Arial;
 	font-size: 14px;
 	color: rgb(230,233,237);
 }
@@ -905,7 +909,7 @@ transition:.3s all;
 .developer {
 	display: inline-block;
 	float: right;
-	font-family: 'Open Sans', serif, Arial;
+	font-family: 'OpenSans', serif, Arial;
 	font-size: 13px;
 	color: rgb(198,198,198);
 	margin:23px 119px 0 0;
@@ -930,7 +934,7 @@ transition:.3s all;
     left: 0;
     top: 0;
     width: 100%;
-    height: 870px;
+    height: 640px;
     overflow: hidden; }
      
     .slider .slider-container {
@@ -987,13 +991,14 @@ transition:.3s all;
         }
         .slide-text-block p{
         	width: 90%;
+        	line-height: 1.2;
         }
         .slide-text-block p a{
         	color: white;
         	text-decoration: none;
         }
          .slider .slide-text .slide-all-text .slide-text-block {
-          font-size: 16px;
+          font-size: 14px;
           color: white;
             font-family: 'OpenSans';
           width: 80%;
@@ -1049,38 +1054,38 @@ transition:.3s all;
 			  .invest-project ul li span:hover,
               .invest-project ul li a:hover{
               	color:#ffd84f;
-              	background: rgba(20,20,20,.6);
+              	background: rgba(20,20,20,.8);
               }
   .invest-project ul li .soc-ic:hover {
-    background: url(../img/other/icon1-h.png) no-repeat 20px, rgba(20,20,20,.6); }
+    background: url(../img/other/icon1-h.png) no-repeat 20px, rgba(20,20,20,.8); }
   .invest-project ul li .med-ic:hover {
-    background: url(../img/other/icon2-h.png) no-repeat 20px, rgba(20,20,20,.6); }
+    background: url(../img/other/icon2-h.png) no-repeat 20px, rgba(20,20,20,.8); }
   .invest-project ul li .en-ic:hover {
-    background: url(../img/other/icon3-h.png) no-repeat 20px, rgba(20,20,20,.6); }
+    background: url(../img/other/icon3-h.png) no-repeat 20px, rgba(20,20,20,.8); }
   .invest-project ul li .tran-ic:hover {
-    background: url(../img/other/icon4-h.png) no-repeat 20px, rgba(20,20,20,.6); }
+    background: url(../img/other/icon4-h.png) no-repeat 20px, rgba(20,20,20,.8); }
   .invest-project ul li .ek-ic:hover {
-    background: url(../img/other/icon5-h.png) no-repeat 20px, rgba(20,20,20,.6); }
+    background: url(../img/other/icon5-h.png) no-repeat 20px, rgba(20,20,20,.8); }
   .invest-project ul li .elek-ic:hover {
-    background: url(../img/other/icon6-h.png) no-repeat 20px, rgba(20,20,20,.6); }
+    background: url(../img/other/icon6-h.png) no-repeat 20px, rgba(20,20,20,.8); }
 
 .soc-ic {
-  background: url(../img/other/icon1.png) no-repeat 20px,rgba(125,125,125,.5); }
+  background: url(../img/other/icon1.png) no-repeat 20px,rgba(125,125,125,.8); }
 
 .med-ic {
-  background: url(../img/other/icon2.png)  no-repeat 20px,rgba(125,125,125,.5); }
+  background: url(../img/other/icon2.png)  no-repeat 20px,rgba(125,125,125,.8); }
 
 .en-ic {
-  background: url(../img/other/icon3.png) no-repeat 20px,rgba(125,125,125,.5); }
+  background: url(../img/other/icon3.png) no-repeat 20px,rgba(125,125,125,.8); }
 
 .tran-ic {
-  background: url(../img/other/icon4.png) no-repeat 20px,rgba(125,125,125,.5); }
+  background: url(../img/other/icon4.png) no-repeat 20px,rgba(125,125,125,.8); }
 
 .ek-ic {
-  background: url(../img/other/icon5.png) no-repeat 20px,rgba(125,125,125,.5); }
+  background: url(../img/other/icon5.png) no-repeat 20px,rgba(125,125,125,.8); }
 
 .elek-ic {
-  background: url(../img/other/icon6.png) no-repeat 20px,rgba(125,125,125,.5); }
+  background: url(../img/other/icon6.png) no-repeat 20px,rgba(125,125,125,.8); }
 .menu-pop-up .pop-up-block{
 	min-height: 48px;
 	padding-left: 75px;
@@ -1169,7 +1174,7 @@ display: none;
             left: 0;
             color: black;
             padding-bottom: 0;
-            font-family: Open Sans, Tahoma, sans-serif, Arial;
+            font-family: OpenSans, Tahoma, sans-serif, Arial;
             font-size: 14px;
             padding: 7px;             line-height: 15px;}
 
@@ -1533,7 +1538,7 @@ display: none;
     .gallery-info {position: absolute; height: 35px; width: 100%; bottom: 0; left: 0; background: white;z-index: 1;}
     .gallery-date{background: url(../img/red-flag.png); height: 25px;width: 127px; position: absolute;top: 5px;left: 5px; color: white; font-family: 'OpenSans', Arial;
     text-align: center; line-height: 25px; }
-    .gallery-block p{position: absolute;bottom: -100px; z-index: 1; width: 100%; background: rgba(0,0,0,.5); color: white; font-family: 'OpenSans', Arial; padding: 5px; } 
+    .gallery-block p{position: absolute;bottom: -100px; z-index: 1; width: 100%; background: rgba(0,0,0,.8); color: white; font-family: 'OpenSans', Arial; padding: 5px; } 
     .star{ position: absolute; right: 5px;bottom: 10px;}
     .rating {
     background: url(../img/star.png)no-repeat left center;
@@ -1679,4 +1684,30 @@ display: none;
 }
 .breadcrumbs a:hover{
  color: #d4762d;
+}
+.search_block a{
+	height: 25px;
+	width: 25px;
+	margin-top: 5px;
+	display: inline-block;
+	float: right;
+	margin-left: 15px;
+}
+.search_block a:last-child{
+	/*float: right;*/
+}
+.search_block a img{
+	height: 100%;
+	width: 100%;
+}
+.adress-box .call{
+	color: white;
+	font-size: 14px;
+	display: inline-block;
+	margin:0;
+	padding:0;
+	text-transform: none;
+}
+.adress-box .call:hover{
+	color: rgb(245,208,78);
 }

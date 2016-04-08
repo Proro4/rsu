@@ -1,4 +1,12 @@
 $(document).ready(function(){
+// 
+$('.carusel-item.popular a').each(function(){
+	var textPol = $(this).html();
+	var beginTextPol = textPol.substring(0, 150);
+	console.log(beginTextPol);
+	$(this).html(beginTextPol+'...');
+})
+
 //Document-filtr
 $('.document-page .calendar-years select').on('change',function(){
 	var docYear = $(this).find('option:selected').val();
@@ -396,21 +404,21 @@ $('.lang .lang-but').on('click',function(){
   		
 		$('.empty-block').css('height',slideHeight+10);
 		if($(window).width() <= 1640 ){
-			$('.slider').css('height','950px')
-			$('.empty-block').css('height','950px');
+			$('.slider').css('height','640px')
+			$('.empty-block').css('height','640px');
 		} 
 		 if($(window).width() <= 1440 ){
-			$('.slider').css('height','750px')
-			$('.empty-block').css('height','750px');
+			$('.slider').css('height','640px')
+			$('.empty-block').css('height','640px');
 		} 
   		 if($(window).width() <= 1280 ){
-			$('.slider').css('height','700px')
-			$('.empty-block').css('height','700px');
+			$('.slider').css('height','640px')
+			$('.empty-block').css('height','640px');
 
 		}  
 		if($(window).width() <= 1150 ){
-			$('.slider').css('height','680px')
-			$('.empty-block').css('height','680px');
+			$('.slider').css('height','640px')
+			$('.empty-block').css('height','640px');
 
 		} 
 		if($(window).width() <= 1024 ){
