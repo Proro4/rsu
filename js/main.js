@@ -483,10 +483,10 @@ $('.lang .lang-but').on('click',function(){
 		carId -= 1;
 		$('.slider-3 .all-carusel').animate({left:-carId+'00%'});
 
-		if(carId < caruselLength+1){
+		if(carId < 0){
 			carId = caruselLength-1;
 		$('.slider-3 .all-carusel').animate({left:-carId+'00%'});
-			
+
 		}
 	})
 })
