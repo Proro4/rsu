@@ -456,6 +456,9 @@ $('.lang .lang-but').on('click',function(){
 		}
 	})
 	$('.slider-2 .carusel-arrow-prev').click(function(){
+	var caruselLength = $('.slider-2 .carusel-block').length;
+	$('.slider-2 .all-carusel').css('width',caruselLength+'00%');
+	$('.slider-2 .carusel-block').css('width',(100/caruselLength)+'%');
 		carId -= 1;
 		$('.slider-2 .all-carusel').animate({left:-carId+'00%'});
 
