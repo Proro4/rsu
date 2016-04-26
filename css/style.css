@@ -838,7 +838,7 @@ margin-bottom: 15px;
 }
 
 .adress-box {
-	width: 48%;
+	width: 58%;
 	height: auto;
 	overflow: hidden;
 	float: left;
@@ -875,7 +875,7 @@ margin-bottom: 15px;
 }
 
 .info-box {
-	width: 48%;
+	width: 40%;
 	height: auto;
 	min-height: 200px;
 	overflow: hidden;
@@ -1712,4 +1712,13 @@ display: none;
 }
 .adress-box .call:hover{
 	color: rgb(245,208,78);
+}
+.adress-block{
+	width: 50%;
+	float: left;
+	box-sizing:border-box;
+}
+.adress-block:last-child{
+	padding-left: 25px;
+
 }
