@@ -1647,6 +1647,7 @@ display: none;
 .left-column p a {
     color: #833545;
     text-decoration: none;
+    display: inline-block;
 }
 .left-column p a:hover {
 	text-decoration: underline;
