@@ -265,3 +265,8 @@ top:49%;}
     /*color: #336d83;*/
     background: #e7e7e7;
 }
+.download-documents-box > a{
+    max-width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+}

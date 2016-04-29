@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
 // 
 $('.slider-2 .carusel-item a').each(function(){
 	var textPol = $(this).html();
@@ -229,6 +230,12 @@ $('body').append(iframe); //добавляем эту переменную с if
 		var textLightbox = $(this).parent().find('b').html()
 		$('.lightbox p').html(textLightbox);
 		$('.lightbox').css('display','block');
+		//lightbox info
+var lightHeight = $('.lightbox span').height();
+var winHeight = $(window).height();
+var lightTop = (winHeight - lightHeight)/2;
+$('.lightbox span').css({'margin-top':lightTop});
+
 	})
 	$('.lightbox span i').on('click',function(){
 
