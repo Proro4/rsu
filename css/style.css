@@ -1520,6 +1520,9 @@ display: none;
     .lightbox span p,.lightbox span iframe{
     	max-height: 100%;
     }
+    .lightbox span iframe{
+    	height: 500px !important;
+    }
     .lightbox span i{
     	position: absolute;
 		top: 15px;

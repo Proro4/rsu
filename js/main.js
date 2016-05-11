@@ -236,6 +236,7 @@ var winHeight = $(window).height();
 var lightTop = (winHeight - lightHeight)/2;
 $('.lightbox span').css({'margin-top':lightTop});
 
+
 	})
 	$('.lightbox span i').on('click',function(){
 
