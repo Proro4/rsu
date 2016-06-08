@@ -1727,5 +1727,27 @@ display: none;
 }
 .adress-block:last-child{
 	padding-left: 25px;
+}
 
+/*index news*/
+.slider-3 .carusel .all-carusel .carusel-block .carusel-item:first-child{
+	margin-left: 1px;
+}
+.slider-popular .slider-2 .carusel .all-carusel .carusel-block .carusel-item:first-child{
+	margin-left: 1% !important;
+}
+.carusel .all-carusel .carusel-block .carusel-item{
+	width: 23%;
+	margin: 0 1%;
+	margin-bottom: 15px;
+}
+.slider-popular .button-popular{
+	width: 100%;
+}
+.down-doc{
+	height: 360px;
+	background: white;
+}
+.slider-popular{
+	display: inline-block;
 }

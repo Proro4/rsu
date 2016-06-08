@@ -1,9 +1,9 @@
 $(document).ready(function(){
 
 // 
-$('.slider-2 .carusel-item a').each(function(){
+$('.slider-2  a').each(function(){
 	var textPol = $(this).html();
-	var beginTextPol = textPol.substring(0, 150);
+	var beginTextPol = textPol.substring(0, 115);
 	$(this).html(beginTextPol+'...');
 })
 
@@ -69,20 +69,6 @@ $('.document-page .calendar-years select').on('change',function(){
 
 
 
-	// $('.calendar-month select').on("change",function(){
-	// 	var year = $('.calendar-years select').val()
-	// 	var numbMonth = $(this).find('option:selected').val();
-	// 	var nameMonth = $(this).find('option:selected').text();
-	// 	$('.calendar .calentdar-days td').attr('date-month',numbMonth);
-	// 	$('.calendar .month').attr('data-month',numbMonth);
-	// 	$('.calendar .month').text(nameMonth+' '+year);
-	// })
-	// $('.calendar-years select').on("change",function(){
-	// 	var nameYear = $(this).find('option:selected').text();
-	// 	$('.calendar .calentdar-days td').attr('date-year',nameYear);
-	// 	var month = $('.calendar-month select').val()
-	// 	$('.calendar .month').text(month+' '+nameYear);
-	// })
 	
 	//stars
 	$('.1').hover(
