@@ -1,10 +1,12 @@
 $(document).ready(function(){
 
 // 
-$('.slider-2  a').each(function(){
+$('.slider-2  a,.slider-2  a p').each(function(){
 	var textPol = $(this).html();
-	var beginTextPol = textPol.substring(0, 115);
-	$(this).html(beginTextPol+'...');
+	if(textPol.length >= 115){
+		var beginTextPol = textPol.substring(0, 115);
+		$(this).html(beginTextPol+'...');
+	}
 })
 
 //Document-filtr
