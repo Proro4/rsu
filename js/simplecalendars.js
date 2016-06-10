@@ -72,10 +72,10 @@ var calendar = {
         calDayTd.html(lCalDay); // записываем дату в месяц
         calDayTd.attr('date-day', lCalDay);//записуем дату в атрибута
       });
-       $('.calentdar-days tr.2 td:eq(0),.calentdar-days tr.2 td:eq(1),.calentdar-days tr.2 td:eq(2),.calentdar-days tr.2 td:eq(3)').appendTo('.calentdar-days tr.1')
-      $('.calentdar-days tr.3 td:eq(0),.calentdar-days tr.3 td:eq(1),.calentdar-days tr.3 td:eq(2),.calentdar-days tr.3 td:eq(3)').appendTo('.calentdar-days tr.2')
-      $('.calentdar-days tr.4 td:eq(0),.calentdar-days tr.4 td:eq(1),.calentdar-days tr.4 td:eq(2),.calentdar-days tr.4 td:eq(3)').appendTo('.calentdar-days tr.3')
-      $('.calentdar-days tr.5 td:eq(0),.calentdar-days tr.5 td:eq(1),.calentdar-days tr.5 td:eq(2),.calentdar-days tr.5 td:eq(3)').appendTo('.calentdar-days tr.4')
+       $('.calentdar-days tr.2 td:eq(0),.calentdar-days tr.2 td:eq(1)').appendTo('.calentdar-days tr.1')
+      $('.calentdar-days tr.3 td:eq(0),.calentdar-days tr.3 td:eq(1)').appendTo('.calentdar-days tr.2')
+      $('.calentdar-days tr.4 td:eq(0),.calentdar-days tr.4 td:eq(1)').appendTo('.calentdar-days tr.3')
+      $('.calentdar-days tr.5 td:eq(0),.calentdar-days tr.5 td:eq(1)').appendTo('.calentdar-days tr.4')
        // for(var i = 1; i<=dFWeak; i++){
        //  $('.calentdar-days tr:first').prepend('<td date-month="1" date-day="1" date-year="1">1</td>');
        // }
@@ -175,10 +175,10 @@ var calendar = {
         calDayTd.html(lCalDay);
         calDayTd.attr('date-day', lCalDay);
       });
-       $('.calentdar-days tr.2 td:eq(0),.calentdar-days tr.2 td:eq(1),.calentdar-days tr.2 td:eq(2),.calentdar-days tr.2 td:eq(3)').appendTo('.calentdar-days tr.1')
-      $('.calentdar-days tr.3 td:eq(0),.calentdar-days tr.3 td:eq(1),.calentdar-days tr.3 td:eq(2),.calentdar-days tr.3 td:eq(3)').appendTo('.calentdar-days tr.2')
-      $('.calentdar-days tr.4 td:eq(0),.calentdar-days tr.4 td:eq(1),.calentdar-days tr.4 td:eq(2),.calentdar-days tr.4 td:eq(3)').appendTo('.calentdar-days tr.3')
-      $('.calentdar-days tr.5 td:eq(0),.calentdar-days tr.5 td:eq(1),.calentdar-days tr.5 td:eq(2),.calentdar-days tr.5 td:eq(3)').appendTo('.calentdar-days tr.4')
+      $('.calentdar-days tr.2 td:eq(0),.calentdar-days tr.2 td:eq(1)').appendTo('.calentdar-days tr.1')
+      $('.calentdar-days tr.3 td:eq(0),.calentdar-days tr.3 td:eq(1)').appendTo('.calentdar-days tr.2')
+      $('.calentdar-days tr.4 td:eq(0),.calentdar-days tr.4 td:eq(1)').appendTo('.calentdar-days tr.3')
+      $('.calentdar-days tr.5 td:eq(0),.calentdar-days tr.5 td:eq(1)').appendTo('.calentdar-days tr.4')
        // for(var i = 1; i<=dFWeak; i++){
        //  $('.calentdar-days tr:first').prepend('<td date-month="1" date-day="1" date-year="1">1</td>');
        // }

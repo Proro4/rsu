@@ -281,7 +281,7 @@ h1 {
 
 .news-content {
 	width: 100%;
-	height: auto;
+	height: 185px;
 	/*overflow: visible;*/
 	border-top: 1px solid rgb(234,234,234);
 	position: relative;
@@ -469,7 +469,7 @@ margin-bottom: 15px;
 	content: "";
 	display: block;
 	float: left;
-	width: 70px;
+	width: 50px;
 	height: 1px;
 	background:rgb(251,211,78);
 }
@@ -479,7 +479,7 @@ margin-bottom: 15px;
 	content: "";
 	display: block;
 	float: right;
-	width: 70px;
+	width: 50px;
 	height: 1px;
 	background:rgb(251,211,78);
 }
@@ -490,7 +490,9 @@ margin-bottom: 15px;
 	position:relative;
 	margin-top: 13px;
 	padding-bottom: 75px;
-	min-height: 30px;
+	/*min-height: 30px;*/
+	height:20px;
+	box-sizing: border-box;
 }
 .text-page.links .left-column{
 	padding: 0;
@@ -506,7 +508,6 @@ margin-bottom: 15px;
 .text-page.links .left-column .title-page:before,.text-page.links .left-column .title-page:after{ width: 28%;}
 
 .text-page .right-column .download-button{margin: 0;}
-.text-page .right-column .events-content {	padding-bottom: 25px;}
 .text-page .right-column .events-content:nth-child(2n){background: white;}
 .text-page .right-column .events-content .events-date p{padding-left:0; }
 .text-page img{padding: 15px 0;
@@ -628,7 +629,7 @@ margin-bottom: 15px;
 	background: rgb(255,255,255);
 	margin: 0;
 	width: 100%;
-	height: auto;
+	height: 82px;
 	/*overflow: hidden;*/
 	border-bottom: 1px solid rgb(234,234,234);
 
@@ -1745,7 +1746,7 @@ display: none;
 	width: 100%;
 }
 .down-doc{
-	height: 360px;
+	height: 416px;
 	background: white;
 }
 .slider-popular{

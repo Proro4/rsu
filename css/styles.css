@@ -232,9 +232,6 @@ top:49%;}
 .calendar-page .right-column .events-content:nth-child(2n) {
     background: white;
 }
-.calendar-page .right-column .events-content {
-    padding-bottom: 25px;
-}
 .calendar-page .day-text{ text-align: left; min-height: 65px; font-family: 'OpenSans'; font-size: 14px; padding-top: 15px; border-bottom: 1px solid #eaeaea;}
 .calendar-page .day-text p{float: left; margin: auto 15px; padding-left: 15px; background: url(../img/arrow.png)no-repeat left 17px; line-height: 45px; color: #336d83;}
 .calendar-page .day-text a{color:black; text-decoration: none;}

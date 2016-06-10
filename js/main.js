@@ -1,13 +1,28 @@
 $(document).ready(function(){
 
 // 
-$('.slider-2  a,.slider-2  a p').each(function(){
+$('.slider-2  a,.slider-2  a p,.a-news').each(function(){
 	var textPol = $(this).html();
 	if(textPol.length >= 115){
 		var beginTextPol = textPol.substring(0, 115);
 		$(this).html(beginTextPol+'...');
 	}
 })
+	$('.down-doc li a,.down-doc li a p').each(function(){
+		var textPol = $(this).html();
+		if(textPol.length >= 80){
+			var beginTextPol = textPol.substring(0, 80);
+			$(this).html(beginTextPol+'...');
+		}
+	})
+	$('.p-content').each(function(){
+		var textPol = $(this).html();
+		if(textPol.length >= 250){
+			var beginTextPol = textPol.substring(0, 250);
+			$(this).html(beginTextPol+'...');
+		}
+	})
+
 
 //Document-filtr
 $('.document-page .calendar-years select').on('change',function(){
